@@ -1,0 +1,12 @@
+{
+    "name": "Workflow-SmartDoorbell",
+    "description": "Projet de fin d'études dans le programme \"Internet des Objets\" au Collège Communautaire du Nouveau-Brunswick (CCNB)",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "SmartDoorbell.json",
+            "credentialsFile": "SmartDoorbell_cred.json"
+        }
+    }
+}
