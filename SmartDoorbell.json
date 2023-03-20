@@ -409,6 +409,17 @@
         "hidden": false
     },
     {
+        "id": "9e88d242ff60dbeb",
+        "type": "ui_group",
+        "name": "Log actions",
+        "tab": "25a6749ce5d4e430",
+        "order": 4,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
         "id": "2560e2c03f783384",
         "type": "mqtt out",
         "z": "c85c8003578c92e6",
@@ -594,7 +605,9 @@
         "x": 330,
         "y": 440,
         "wires": [
-            []
+            [
+                "794a2f4abe8d7cf7"
+            ]
         ]
     },
     {
@@ -860,12 +873,14 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Bonjour",
-        "payloadType": "str",
-        "x": 330,
-        "y": 880,
+        "payload": "ring",
+        "payloadType": "global",
+        "x": 360,
+        "y": 780,
         "wires": [
-            []
+            [
+                "a683b716ea1eec73"
+            ]
         ]
     },
     {
@@ -987,7 +1002,7 @@
         "type": "function",
         "z": "c85c8003578c92e6",
         "name": "Set Topic",
-        "func": "if (msg.payload == \"clearfinger\" || msg.payload == \"enroll\"){\n    msg.topic = \"state/finger\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"clearfinger\") ? \"All fingers deleted\" : \"Finger enrolled\";\n    msg.auteur_action = \"Admin\";\n    \n}else if (msg.payload == \"motion_on\" || msg.payload == \"motion_off\"){\n    msg.flow.motion = (msg.payload == \"motion_on\") ? true : false;\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"motion_on\") ? \"Motion alarm activated\" : \"Motion alarm deactivated\";\n    msg.auteur_action = \"Admin\";\n\n}else if (msg.payload == \"ring_on\" || msg.payload == \"ring_off\"){\n    msg.topic = \"state/ring\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"ring_on\") ? \"Ring alarm activated\" : \"Ring alarm deactivated\";\n    msg.auteur_action = \"Admin\";\n\n}else if (msg.payload == \"door_on\" || msg.payload == \"door_off\"){\n    msg.topic = \"state/door\"\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"door_on\") ? \"Door opened\" : \"Door closed\";\n    msg.auteur_action = \"Admin\";\n} else if (msg.payload == \"email_on\" || msg.payload == \"email_off\")\n    msg.flow.email = (msg.payload == \"email_on\") ? true : false;\n\n\n\nreturn msg;",
+        "func": "if (msg.payload == \"clearfinger\" || msg.payload == \"enroll\"){\n    msg.topic = \"state/finger\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"clearfinger\") ? \"All fingers deleted\" : \"Finger enrolled\";\n    msg.auteur_action = \"Admin\";\n    \n}else if (msg.payload == \"motion_on\" || msg.payload == \"motion_off\"){\n    msg.topic = \"state/motion\";\n    global.motion = (msg.payload == \"motion_on\") ? true : false;\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"motion_on\") ? \"Motion alarm activated\" : \"Motion alarm deactivated\";\n    msg.auteur_action = \"Admin\";\n\n}else if (msg.payload == \"ring_on\" || msg.payload == \"ring_off\"){\n    msg.topic = \"state/ring\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"ring_on\") ? \"Ring song activated\" : \"Ring song deactivated\";\n    msg.auteur_action = \"Admin\";\n\n}else if (msg.payload == \"door_on\" || msg.payload == \"door_off\"){\n    msg.topic = \"state/door\"\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"door_on\") ? \"Door opened\" : \"Door closed\";\n    msg.auteur_action = \"Admin\";\n    \n} else if (msg.payload == \"email_on\" || msg.payload == \"email_off\"){\n    msg.topic = \"state/email\";\n    global.ring = (msg.payload == \"email_on\") ? true : false;\n    msg.action_name = (msg.payload == \"email_on\") ? \"Email notifications activated\" : \"Email notifications deactivated\";\n    msg.auteur_action = \"Admin\";\n}\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1281,7 +1296,7 @@
         "type": "ui_switch",
         "z": "c85c8003578c92e6",
         "name": "",
-        "label": "Door closed",
+        "label": "Door opened",
         "tooltip": "",
         "group": "702ab0b5f76bbe7a",
         "order": 3,
@@ -1327,7 +1342,6 @@
         "y": 500,
         "wires": [
             [
-                "3e2ee09aa2f38c25",
                 "2d6ac883ec27cf84"
             ]
         ]
@@ -1410,7 +1424,7 @@
         "type": "function",
         "z": "c85c8003578c92e6",
         "name": "Set Global feature state",
-        "func": "msg.flow.motion = false;\nmsg.flow.door = false;\nmsg.flow.ring = false;\nreturn msg;",
+        "func": "\n\nglobal.set(\"motion\", false);\nglobal.set(\"ring\", false);",
         "outputs": 0,
         "noerr": 0,
         "initialize": "",
@@ -1467,8 +1481,8 @@
         "y": 260,
         "wires": [
             [
-                "505765bc71513328",
-                "afed3706510d29ed"
+                "afed3706510d29ed",
+                "1d8e33de4a958fe6"
             ]
         ]
     },
@@ -1476,15 +1490,15 @@
         "id": "3662c13d201a10fe",
         "type": "ui_table",
         "z": "3468f95594a76fb5",
-        "group": "30fe2fdb15b54ae3",
-        "name": "",
+        "group": "9e88d242ff60dbeb",
+        "name": "Log",
         "order": 5,
         "width": 0,
         "height": 0,
         "columns": [
             {
-                "field": "",
-                "title": "",
+                "field": "action_name",
+                "title": "Action",
                 "width": "",
                 "align": "left",
                 "formatter": "plaintext",
@@ -1493,8 +1507,8 @@
                 }
             },
             {
-                "field": "",
-                "title": "",
+                "field": "date_action",
+                "title": "Date",
                 "width": "",
                 "align": "left",
                 "formatter": "plaintext",
@@ -1505,7 +1519,7 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 650,
+        "x": 990,
         "y": 120,
         "wires": [
             []
@@ -1524,8 +1538,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 640,
-        "y": 260,
+        "x": 860,
+        "y": 200,
         "wires": []
     },
     {
@@ -1560,6 +1574,91 @@
         "wires": [
             [
                 "d8f627d71384ba9f"
+            ]
+        ]
+    },
+    {
+        "id": "a69666d8810ee249",
+        "type": "ui_ui_control",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "events": "connect",
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "86125a0aec959a9a"
+            ]
+        ]
+    },
+    {
+        "id": "86125a0aec959a9a",
+        "type": "postgresql",
+        "z": "3468f95594a76fb5",
+        "name": "Insert User",
+        "query": "select * from log order by date_action desc",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 630,
+        "y": 120,
+        "wires": [
+            [
+                "505765bc71513328",
+                "b90c62aada521c46"
+            ]
+        ]
+    },
+    {
+        "id": "b90c62aada521c46",
+        "type": "change",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 120,
+        "wires": [
+            [
+                "3662c13d201a10fe"
+            ]
+        ]
+    },
+    {
+        "id": "1d8e33de4a958fe6",
+        "type": "delay",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 520,
+        "y": 200,
+        "wires": [
+            [
+                "86125a0aec959a9a"
             ]
         ]
     },
