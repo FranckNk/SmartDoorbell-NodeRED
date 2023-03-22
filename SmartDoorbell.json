@@ -286,16 +286,6 @@
         "passwordFieldType": "str"
     },
     {
-        "id": "46df723251992b9e",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "30fe2fdb15b54ae3",
-        "order": 3,
-        "width": 6,
-        "height": 1
-    },
-    {
         "id": "9ea5b1211ce1f538",
         "type": "ui_group",
         "name": "Table",
@@ -415,9 +405,41 @@
         "tab": "25a6749ce5d4e430",
         "order": 4,
         "disp": true,
-        "width": "10",
+        "width": 9,
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "8f3178258a0ed9a0",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "30fe2fdb15b54ae3",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "e4d294fd3416cf6b",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "702ab0b5f76bbe7a",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "bfaadd0a56cbec3d",
+        "type": "remote-config",
+        "name": "SmartDoorbell UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "15pzq7qia11vcff4pna7hui6sw2xzgfd1ged1906gyl7t4cumh6egbmhh06bx6xv",
+        "server": "nodered03.remote-red.com",
+        "region": "us"
     },
     {
         "id": "2560e2c03f783384",
@@ -455,8 +477,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 290,
-        "y": 980,
+        "x": 410,
+        "y": 1120,
         "wires": [
             [],
             []
@@ -569,7 +591,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 330,
-        "y": 380,
+        "y": 440,
         "wires": [
             [
                 "794a2f4abe8d7cf7"
@@ -603,7 +625,7 @@
         "animate": false,
         "className": "",
         "x": 330,
-        "y": 440,
+        "y": 380,
         "wires": [
             [
                 "794a2f4abe8d7cf7"
@@ -633,7 +655,7 @@
         "z": "c85c8003578c92e6",
         "group": "702ab0b5f76bbe7a",
         "name": "",
-        "order": 6,
+        "order": 8,
         "width": 0,
         "height": 0,
         "format": "<div>\n    <img src = \"http://192.168.137.76\" width=\"0\" height=\"0\"\n</div>",
@@ -642,8 +664,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 440,
-        "y": 980,
+        "x": 560,
+        "y": 1120,
         "wires": [
             []
         ]
@@ -716,8 +738,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
-        "y": 1080,
+        "x": 300,
+        "y": 860,
         "wires": []
     },
     {
@@ -728,8 +750,8 @@
         "label": "Update name and email",
         "group": "d8ce519417b5cd60",
         "order": 2,
-        "width": 0,
-        "height": 0,
+        "width": 6,
+        "height": 2,
         "options": [
             {
                 "label": "Name",
@@ -791,17 +813,23 @@
         "type": "inject",
         "z": "c85c8003578c92e6",
         "name": "",
-        "props": [],
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 310,
-        "y": 1080,
+        "payload": "enroll",
+        "payloadType": "str",
+        "x": 430,
+        "y": 1220,
         "wires": [
             [
-                "3a3aa81223359edb"
+                "086741b6a3c66c5e"
             ]
         ]
     },
@@ -810,11 +838,11 @@
         "type": "remote-access",
         "z": "c85c8003578c92e6",
         "d": true,
-        "confignode": "",
-        "name": "",
+        "confignode": "bfaadd0a56cbec3d",
+        "name": "Remot device",
         "verbose": 0,
-        "x": 880,
-        "y": 1020,
+        "x": 930,
+        "y": 940,
         "wires": [
             []
         ]
@@ -875,7 +903,7 @@
         "topic": "",
         "payload": "ring",
         "payloadType": "global",
-        "x": 360,
+        "x": 320,
         "y": 780,
         "wires": [
             [
@@ -916,8 +944,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 920,
+        "x": 440,
+        "y": 1060,
         "wires": [
             [
                 "8928af3bdc5aa467"
@@ -930,7 +958,7 @@
         "z": "c85c8003578c92e6",
         "d": true,
         "group": "702ab0b5f76bbe7a",
-        "order": 7,
+        "order": 9,
         "width": 0,
         "height": 0,
         "name": "",
@@ -938,8 +966,8 @@
         "format": "{{msg.payload}}",
         "layout": "col-center",
         "className": "",
-        "x": 580,
-        "y": 900,
+        "x": 700,
+        "y": 1040,
         "wires": []
     },
     {
@@ -971,7 +999,7 @@
         "label": "Motion email alerts",
         "tooltip": "",
         "group": "702ab0b5f76bbe7a",
-        "order": 2,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -990,7 +1018,7 @@
         "animate": false,
         "className": "",
         "x": 330,
-        "y": 320,
+        "y": 260,
         "wires": [
             [
                 "794a2f4abe8d7cf7"
@@ -1026,7 +1054,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "\n\n<style>\n\n    .container {\n        display: block;\n        background-color: #f2f2f2;\n        border: 1px solid #ccc;\n        padding: 20px;\n    }\n    button:hover {\n    background-color: #3e8e41;\n    }\n\n    button:active {\n    background-color: #3e8e41;\n    box-shadow: 0 2px #666;\n    transform: translateY(2px);\n    }\n    .hide {\n        display: none;\n    }\n\n    button {\n        background-color: #4CAF50;\n        border: none;\n        color: white;\n        padding: 15px 32px;\n        text-align: center;\n        text-decoration: none;\n        display: inline-block;\n        font-size: 16px;\n        margin-top: 20px;\n        cursor: pointer;\n    }\n</style>\n\n    <div class=\"container\">\n        <!-- <button  onclick=\"toggle()\">Masquer/Afficher</button>\n        <p>Cliquez sur le bouton ci-dessous pour masquer/afficher la section :</p> !-->\n        <div id=\"myDiv\">\n            <p><img src = \"http://192.168.137.200\" width=\"600\" height=\"450\"></p>\n        </div>\n        \n    </div>",
+        "format": "\n\n<style>\n\n    .container {\n        display: block;\n        background-color: #f2f2f2;\n        border: 1px solid #ccc;\n        padding: 20px;\n    }\n    button:hover {\n    background-color: #3e8e41;\n    }\n\n    button:active {\n    background-color: #3e8e41;\n    box-shadow: 0 2px #666;\n    transform: translateY(2px);\n    }\n    .hide {\n        display: none;\n    }\n\n    button {\n        background-color: #4CAF50;\n        border: none;\n        color: white;\n        padding: 15px 32px;\n        text-align: center;\n        text-decoration: none;\n        display: inline-block;\n        font-size: 16px;\n        margin-top: 20px;\n        cursor: pointer;\n    }\n</style>\n\n    <div class=\"container\">\n        <!-- <button  onclick=\"toggle()\">Masquer/Afficher</button>\n        <p>Cliquez sur le bouton ci-dessous pour masquer/afficher la section :</p> !-->\n        <div id=\"myDiv\">\n            <p><img src = \"http://192.168.73.235:8000/\" width=\"535\" height=\"450\"></p>\n        </div>\n        \n    </div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -1171,7 +1199,7 @@
         "z": "c85c8003578c92e6",
         "name": "",
         "group": "702ab0b5f76bbe7a",
-        "order": 4,
+        "order": 5,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -1206,7 +1234,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 610,
+        "x": 670,
         "y": 400,
         "wires": [
             []
@@ -1256,7 +1284,7 @@
         "z": "c85c8003578c92e6",
         "name": "",
         "group": "702ab0b5f76bbe7a",
-        "order": 5,
+        "order": 6,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -1299,7 +1327,7 @@
         "label": "Door opened",
         "tooltip": "",
         "group": "702ab0b5f76bbe7a",
-        "order": 3,
+        "order": 4,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -1318,7 +1346,7 @@
         "animate": false,
         "className": "",
         "x": 310,
-        "y": 260,
+        "y": 200,
         "wires": [
             [
                 "794a2f4abe8d7cf7"
@@ -1342,6 +1370,7 @@
         "y": 500,
         "wires": [
             [
+                "3e2ee09aa2f38c25",
                 "2d6ac883ec27cf84"
             ]
         ]
@@ -1387,18 +1416,18 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "eq",
-                "v": "door_off",
+                "t": "cont",
+                "v": "door",
                 "vt": "str"
             },
             {
-                "t": "eq",
-                "v": "motion_off",
+                "t": "cont",
+                "v": "motion",
                 "vt": "str"
             },
             {
-                "t": "eq",
-                "v": "ring_off",
+                "t": "cont",
+                "v": "ring",
                 "vt": "str"
             }
         ],
@@ -1406,7 +1435,7 @@
         "repair": false,
         "outputs": 3,
         "x": 130,
-        "y": 320,
+        "y": 260,
         "wires": [
             [
                 "49140de42ac47116"
@@ -1415,7 +1444,7 @@
                 "a317a256d2574a51"
             ],
             [
-                "54908942cee4986f"
+                "7c26bac27140712f"
             ]
         ]
     },
@@ -1424,7 +1453,7 @@
         "type": "function",
         "z": "c85c8003578c92e6",
         "name": "Set Global feature state",
-        "func": "\n\nglobal.set(\"motion\", false);\nglobal.set(\"ring\", false);",
+        "func": "if(msg.payload == \"start\"){\n    global.set(\"motion\", false);\n    global.set(\"ring\", false);\n}",
         "outputs": 0,
         "noerr": 0,
         "initialize": "",
@@ -1442,7 +1471,7 @@
         "label": "Ring song alerts",
         "tooltip": "",
         "group": "702ab0b5f76bbe7a",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -1461,12 +1490,64 @@
         "animate": false,
         "className": "",
         "x": 320,
-        "y": 200,
+        "y": 320,
         "wires": [
             [
                 "794a2f4abe8d7cf7"
             ]
         ]
+    },
+    {
+        "id": "66ec6b652e729128",
+        "type": "debug",
+        "z": "c85c8003578c92e6",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "6a2107f5efda6bdf",
+        "type": "debug",
+        "z": "c85c8003578c92e6",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "086741b6a3c66c5e",
+        "type": "mqtt out",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "topic": "state/motion",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "79fe84cfb68e37d5",
+        "x": 690,
+        "y": 1220,
+        "wires": []
     },
     {
         "id": "5603406bd3825e58",
@@ -1477,7 +1558,7 @@
             "2db8770afee653f3",
             "87d73526d7e10490"
         ],
-        "x": 365,
+        "x": 165,
         "y": 260,
         "wires": [
             [
@@ -1492,9 +1573,9 @@
         "z": "3468f95594a76fb5",
         "group": "9e88d242ff60dbeb",
         "name": "Log",
-        "order": 5,
-        "width": 0,
-        "height": 0,
+        "order": 2,
+        "width": 9,
+        "height": 9,
         "columns": [
             {
                 "field": "action_name",
@@ -1519,7 +1600,7 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 990,
+        "x": 1170,
         "y": 120,
         "wires": [
             []
@@ -1538,7 +1619,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
+        "x": 1060,
         "y": 200,
         "wires": []
     },
@@ -1552,7 +1633,7 @@
         "split": true,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 770,
+        "x": 750,
         "y": 360,
         "wires": [
             []
@@ -1569,7 +1650,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
+        "x": 470,
         "y": 360,
         "wires": [
             [
@@ -1595,45 +1676,17 @@
         "id": "86125a0aec959a9a",
         "type": "postgresql",
         "z": "3468f95594a76fb5",
-        "name": "Insert User",
+        "name": "Get log data",
         "query": "select * from log order by date_action desc",
         "postgreSQLConfig": "c07d094777037409",
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 630,
+        "x": 650,
         "y": 120,
         "wires": [
             [
-                "505765bc71513328",
-                "b90c62aada521c46"
-            ]
-        ]
-    },
-    {
-        "id": "b90c62aada521c46",
-        "type": "change",
-        "z": "3468f95594a76fb5",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 840,
-        "y": 120,
-        "wires": [
-            [
-                "3662c13d201a10fe"
+                "d824082137c3e559"
             ]
         ]
     },
@@ -1654,13 +1707,173 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 520,
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "f2a6190b6225abd3"
+            ]
+        ]
+    },
+    {
+        "id": "f2a6190b6225abd3",
+        "type": "change",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "params",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
         "y": 200,
         "wires": [
             [
                 "86125a0aec959a9a"
             ]
         ]
+    },
+    {
+        "id": "d824082137c3e559",
+        "type": "function",
+        "z": "3468f95594a76fb5",
+        "name": "change date format",
+        "func": "if(msg.payload.length == 0)\n    return msg;\n\nvar date = new Date((msg.payload[0].date_action));\n\nvar day = (\"0\" + date.getDate()).slice(-2); // ajouter un zéro devant le jour si nécessaire\nvar month = (\"0\" + (date.getMonth() + 1)).slice(-2); // ajouter un zéro devant le mois si nécessaire\nvar year = date.getFullYear(); // obtenir l'année\nvar hours = (\"0\" + date.getHours()).slice(-2); // ajouter un zéro devant les heures si nécessaire\nvar minutes = (\"0\" + date.getMinutes()).slice(-2); // ajouter un zéro devant les minutes si nécessaire\nvar seconds = (\"0\" + date.getSeconds()).slice(-2); // ajouter un zéro devant les secondes si nécessaire\n\nvar dateFormatted = day + \"/\" + month + \"/\" + year + \" \" + hours + \":\" + minutes + \":\" + seconds; // formater la date et l'heure dans le format souhaité\n\nfor (let index = 0; index < msg.payload.length; index++) {\n    var date = new Date((msg.payload[index].date_action));\n\n    var day = (\"0\" + date.getDate()).slice(-2); // ajouter un zéro devant le jour si nécessaire\n    var month = (\"0\" + (date.getMonth() + 1)).slice(-2); // ajouter un zéro devant le mois si nécessaire\n    var year = date.getFullYear(); // obtenir l'année\n    var hours = (\"0\" + date.getHours()).slice(-2); // ajouter un zéro devant les heures si nécessaire\n    var minutes = (\"0\" + date.getMinutes()).slice(-2); // ajouter un zéro devant les minutes si nécessaire\n    var seconds = (\"0\" + date.getSeconds()).slice(-2); // ajouter un zéro devant les secondes si nécessaire\n\n    var dateFormatted = \"Le \" + day + \"/\" + month + \"/\" + year + \" à \" + hours + \":\" + minutes + \":\" + seconds; // formater la date et l'heure dans le format souhaité\n    msg.payload[index].date_action = dateFormatted;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "moment",
+                "module": "moment"
+            }
+        ],
+        "x": 890,
+        "y": 120,
+        "wires": [
+            [
+                "505765bc71513328",
+                "3662c13d201a10fe"
+            ]
+        ]
+    },
+    {
+        "id": "7b72eb895bd0e743",
+        "type": "ui_button",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "group": "9e88d242ff60dbeb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Delete all logs",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "delete",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 480,
+        "y": 280,
+        "wires": [
+            [
+                "3d34fa6f7fb22969"
+            ]
+        ]
+    },
+    {
+        "id": "3d34fa6f7fb22969",
+        "type": "postgresql",
+        "z": "3468f95594a76fb5",
+        "name": "Delete logs",
+        "query": "delete from log",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 750,
+        "y": 280,
+        "wires": [
+            [
+                "6e3ad336749a5d01",
+                "c322903d47b5365d"
+            ]
+        ]
+    },
+    {
+        "id": "6e3ad336749a5d01",
+        "type": "delay",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 200,
+        "wires": [
+            [
+                "86125a0aec959a9a"
+            ]
+        ]
+    },
+    {
+        "id": "c322903d47b5365d",
+        "type": "function",
+        "z": "3468f95594a76fb5",
+        "name": "function 3",
+        "func": "\nmsg.topic = \"Notification\";\nmsg.payload = \"All log deleted succefully...\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 280,
+        "wires": [
+            [
+                "7cf1c56a0a05cbd2"
+            ]
+        ]
+    },
+    {
+        "id": "7cf1c56a0a05cbd2",
+        "type": "ui_toast",
+        "z": "3468f95594a76fb5",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "blue",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1190,
+        "y": 280,
+        "wires": []
     },
     {
         "id": "146621db7f77c288",
