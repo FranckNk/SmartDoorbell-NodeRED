@@ -54,9 +54,7 @@
             "8ee2d51eb630bb9d"
         ],
         "x": 54,
-        "y": 539,
-        "w": 522,
-        "h": 122
+        "y": 539
     },
     {
         "id": "7a700799341b5dae",
@@ -74,9 +72,7 @@
             "458eaff4182ee690"
         ],
         "x": 54,
-        "y": 699,
-        "w": 532,
-        "h": 162
+        "y": 699
     },
     {
         "id": "79fe84cfb68e37d5",
@@ -409,29 +405,9 @@
         "tab": "25a6749ce5d4e430",
         "order": 4,
         "disp": true,
-        "width": 9,
+        "width": 10,
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "8f3178258a0ed9a0",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "30fe2fdb15b54ae3",
-        "order": 3,
-        "width": 6,
-        "height": 1
-    },
-    {
-        "id": "e4d294fd3416cf6b",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "702ab0b5f76bbe7a",
-        "order": 7,
-        "width": 2,
-        "height": 1
     },
     {
         "id": "bfaadd0a56cbec3d",
@@ -444,6 +420,116 @@
         "instancehash": "15pzq7qia11vcff4pna7hui6sw2xzgfd1ged1906gyl7t4cumh6egbmhh06bx6xv",
         "server": "nodered03.remote-red.com",
         "region": "us"
+    },
+    {
+        "id": "0c2696c90ff044e5",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "30fe2fdb15b54ae3",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "957d2429f4947aae",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "702ab0b5f76bbe7a",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e1506a3ab08a2bac",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0bb1fb8ce3611108",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "45bfdc5ef5f634c8",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4a7f1dc34b374257",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cb699d596bd4a764",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "dd8072ea56f5807a",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "24e2fd17d602d21c",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "40fd37664b5b21ed",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f727c8e8266064d4",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 11,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "2560e2c03f783384",
@@ -501,8 +587,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 910,
-        "y": 180,
+        "x": 730,
+        "y": 260,
         "wires": [
             [
                 "e42398aa0311a569"
@@ -697,7 +783,7 @@
         "z": "c85c8003578c92e6",
         "group": "d8ce519417b5cd60",
         "name": "User Info",
-        "order": 1,
+        "order": 2,
         "width": 6,
         "height": 4,
         "format": "<style>\n    .user-card {\n    border: 1px solid #ccc;\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n    max-width: 400px;\n    }\n    \n    .user-card img {\n    width: 100%;\n    max-width: 200px;\n    margin-bottom: 10px;\n    }\n    \n    .user-card h3 {\n    font-size: 24px;\n    margin: 0 0 10px;\n    }\n    \n    .user-card p {\n    font-size: 16px;\n    line-height: 1.5;\n    margin: 0 0 20px;\n    }\n    \n    .user-card ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    }\n    \n    .user-card ul li {\n    font-size: 16px;\n    line-height: 1.5;\n    margin-bottom: 5px;\n    }\n    \n    .user-card ul li strong {\n    font-weight: bold;\n    margin-right: 5px;\n    }\n</style>\n<script>\n    (function(scope) {\n    scope.$watch('msg', function(msg) {\n    if (msg) {\n      // Do something when msg arrives\n      var date = msg.payload.register_date.split('T');\n      msg.payload.register_date = date[1].substring(0,8)  + \" le \" + date[0];\n\n    }\n  });\n})(scope);\n</script>\n\n<div class=\"user-card\">\n    <h3 class=\"user-name\">{{msg.payload.name}}</h3>\n    <ul class=\"user-details\">\n        <li><strong>Email : </strong> {{msg.payload.email}}</li>\n        <li><strong>Reg_date : </strong> {{msg.payload.register_date}}</li>\n    </ul>\n</div>",
@@ -743,8 +829,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1340,
-        "y": 460,
+        "x": 1180,
+        "y": 360,
         "wires": []
     },
     {
@@ -754,9 +840,9 @@
         "name": "",
         "label": "Update name and email",
         "group": "d8ce519417b5cd60",
-        "order": 2,
+        "order": 1,
         "width": 6,
-        "height": 2,
+        "height": 1,
         "options": [
             {
                 "label": "Name",
@@ -846,7 +932,7 @@
         "confignode": "bfaadd0a56cbec3d",
         "name": "Remot device",
         "verbose": 0,
-        "x": 650,
+        "x": 850,
         "y": 1180,
         "wires": [
             []
@@ -963,7 +1049,7 @@
         "z": "c85c8003578c92e6",
         "d": true,
         "group": "702ab0b5f76bbe7a",
-        "order": 9,
+        "order": 8,
         "width": 0,
         "height": 0,
         "name": "",
@@ -990,8 +1076,8 @@
         "notificationSoundComputed": "payload.sound",
         "notificationSoundComputedType": "msg",
         "output": 1,
-        "x": 590,
-        "y": 1120,
+        "x": 890,
+        "y": 1080,
         "wires": [
             []
         ]
@@ -1035,7 +1121,7 @@
         "type": "function",
         "z": "c85c8003578c92e6",
         "name": "Set Topic",
-        "func": "if (msg.payload == \"clearfinger\" || msg.payload == \"enroll\"){\n    msg.topic = \"state/finger\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"clearfinger\") ? \"All fingers deleted\" : \"Finger enrolled\";\n    msg.auteur_action = \"Device\";\n    \n}else if (msg.payload == \"motion_on\" || msg.payload == \"motion_off\"){\n    msg.topic = \"state/motion\";\n    let motion = (msg.payload == \"motion_on\") ? true : false;\n    global.set(\"motion\", motion);\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"motion_on\") ? \"Motion alarm activated\" : \"Motion alarm deactivated\";\n    msg.auteur_action = \"Device\";\n\n}else if (msg.payload == \"ring_on\" || msg.payload == \"ring_off\"){\n    msg.topic = \"state/ring\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"ring_on\") ? \"Ring song activated\" : \"Ring song deactivated\";\n    msg.auteur_action = \"Device\";\n\n}else if (msg.payload == \"door_on\" || msg.payload == \"door_off\"){\n    msg.topic = \"state/door\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"door_on\") ? \"Door opened\" : \"Door closed\";\n    msg.auteur_action = \"Device\";\n    \n} else if (msg.payload == \"email_on\" || msg.payload == \"email_off\"){\n    msg.topic = \"state/email\";\n    let ring = (msg.payload == \"email_on\") ? true : false;\n    global.set(\"ring\", ring);\n    msg.action_name = (msg.payload == \"email_on\") ? \"Email notifications activated\" : \"Email notifications deactivated\";\n    msg.auteur_action = \"Device\";\n}\n\n\nreturn msg;",
+        "func": "if (msg.payload == \"clearfinger\" || msg.payload == \"enroll\"){\n    msg.topic = \"state/finger\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"clearfinger\") ? \"All fingers deleted\" : \"Finger enroll started\";\n    msg.auteur_action = \"Admin\";\n    \n}else if (msg.payload == \"motion_on\" || msg.payload == \"motion_off\"){\n    msg.topic = \"state/motion\";\n    let motion = (msg.payload == \"motion_on\") ? true : false;\n    global.set(\"motion\", motion);\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"motion_on\") ? \"Motion emails activated\" : \"Motion emails deactivated\";\n    msg.auteur_action = \"Device\";\n\n}else if (msg.payload == \"ring_on\" || msg.payload == \"ring_off\"){\n    msg.topic = \"state/ring\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"ring_on\") ? \"Ring song activated\" : \"Ring song deactivated\";\n    msg.auteur_action = \"Admin\";\n\n}else if (msg.payload == \"door_on\" || msg.payload == \"door_off\"){\n    msg.topic = \"state/door\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"door_on\") ? \"Door opened\" : \"Door closed\";\n    msg.auteur_action = \"Admin\";\n    \n} else if (msg.payload == \"email_on\" || msg.payload == \"email_off\"){\n    msg.topic = \"state/email\";\n    let ring = (msg.payload == \"email_on\") ? true : false;\n    global.set(\"ring\", ring);\n    msg.action_name = (msg.payload == \"email_on\") ? \"Ring email notifications activated\" : \"Ring email notifications deactivated\";\n    msg.auteur_action = \"Admin\";\n}\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1078,7 +1164,7 @@
         "type": "function",
         "z": "c85c8003578c92e6",
         "name": "function 1",
-        "func": "msg.to = msg.payload.email;\nmsg.topic = \"Notice\";\nmsg.payload = \"Courriel envoyé..\";\n\nreturn msg;",
+        "func": "msg.to = msg.payload.email;\nmsg.topic = \"Notice\";\nmsg.payload = \"Courriel envoyé !\";\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1239,8 +1325,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 90,
-        "y": 940,
+        "x": 110,
+        "y": 840,
         "wires": [
             [
                 "8fb61193837ca0c0"
@@ -1387,7 +1473,7 @@
         "type": "function",
         "z": "c85c8003578c92e6",
         "name": "function 2",
-        "func": "msg.to = msg.payload.email;\nmsg.topic = \"Alert\";\nmsg.payload = \"Personne détectée devant votre porte...\";\nreturn msg;",
+        "func": "msg.to = msg.payload.email;\nmsg.topic = \"Alert\";\nmsg.payload = \"<h1>Couriel de test !</h1>\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1434,7 +1520,7 @@
             },
             {
                 "t": "cont",
-                "v": "email",
+                "v": "ring",
                 "vt": "str"
             },
             {
@@ -1526,7 +1612,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 400,
-        "y": 1160,
+        "y": 1060,
         "wires": []
     },
     {
@@ -1542,8 +1628,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 220,
-        "y": 1200,
+        "x": 580,
+        "y": 1060,
         "wires": []
     },
     {
@@ -1583,7 +1669,7 @@
         "y": 900,
         "wires": [
             [
-                "a9c947ad79f8632c"
+                "81f3063755deeaf4"
             ]
         ]
     },
@@ -1606,7 +1692,7 @@
         "y": 960,
         "wires": [
             [
-                "bc0fc0dcba23e1ff"
+                "e427f58adeaa7772"
             ]
         ]
     },
@@ -1621,8 +1707,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
-        "y": 900,
+        "x": 950,
+        "y": 880,
         "wires": [
             [
                 "1b18e39ed7befe11"
@@ -1639,8 +1725,8 @@
         "split": true,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 640,
-        "y": 900,
+        "x": 760,
+        "y": 880,
         "wires": [
             [
                 "f76cb5d4a49fe9b8"
@@ -1657,8 +1743,8 @@
         "tls": true,
         "name": "",
         "dname": "",
-        "x": 1110,
-        "y": 900,
+        "x": 1190,
+        "y": 880,
         "wires": []
     },
     {
@@ -1671,8 +1757,8 @@
         "split": true,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 640,
-        "y": 960,
+        "x": 760,
+        "y": 940,
         "wires": [
             [
                 "bebc82161e63d0ff"
@@ -1690,8 +1776,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
-        "y": 960,
+        "x": 940,
+        "y": 940,
         "wires": [
             [
                 "8502c06817694499"
@@ -1708,8 +1794,8 @@
         "tls": true,
         "name": "",
         "dname": "",
-        "x": 1110,
-        "y": 960,
+        "x": 1190,
+        "y": 940,
         "wires": []
     },
     {
@@ -1733,7 +1819,7 @@
         "topic": "",
         "payload": "get",
         "payloadType": "str",
-        "x": 130,
+        "x": 90,
         "y": 1040,
         "wires": [
             [
@@ -1746,17 +1832,172 @@
         "type": "function",
         "z": "c85c8003578c92e6",
         "name": "function 4",
-        "func": "msg.ring = global.get(\"ring\");\nmsg.motion = global.get(\"motion\");\nreturn msg;",
+        "func": "msg.ring = global.get(\"ring\");\nmsg.motion = global.get(\"motion\");\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 280,
+        "x": 140,
         "y": 940,
         "wires": [
             [
-                "3b02187d231a5e39",
+                "b01baceb75d4b433",
+                "5b20f9475d414b06"
+            ]
+        ]
+    },
+    {
+        "id": "8ffa2e3e533d9836",
+        "type": "trigger",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 880,
+        "y": 380,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9c30276b3b7dd3f9",
+        "type": "inject",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "6",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "15",
+        "payloadType": "num",
+        "x": 630,
+        "y": 380,
+        "wires": [
+            [
+                "8ffa2e3e533d9836"
+            ]
+        ]
+    },
+    {
+        "id": "81f3063755deeaf4",
+        "type": "trigger",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 580,
+        "y": 860,
+        "wires": [
+            [
+                "a9c947ad79f8632c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e427f58adeaa7772",
+        "type": "trigger",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 600,
+        "y": 1000,
+        "wires": [
+            [
+                "bc0fc0dcba23e1ff"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b01baceb75d4b433",
+        "type": "switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "motion",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 900,
+        "wires": [
+            [
+                "3b02187d231a5e39"
+            ]
+        ]
+    },
+    {
+        "id": "5b20f9475d414b06",
+        "type": "switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "ring",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 960,
+        "wires": [
+            [
                 "ddc815a61907527b"
             ]
         ]
@@ -1786,8 +2027,8 @@
         "group": "9e88d242ff60dbeb",
         "name": "Log",
         "order": 2,
-        "width": 9,
-        "height": 9,
+        "width": "10",
+        "height": "8",
         "columns": [
             {
                 "field": "action_name",
@@ -1803,6 +2044,16 @@
                 "field": "date_action",
                 "title": "Date",
                 "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "auteur_action",
+                "title": "Author",
+                "width": "20%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
