@@ -489,6 +489,11 @@
         "height": 1
     },
     {
+        "id": "39646c7808ac168e",
+        "type": "alexa-home-conf",
+        "username": "francknk"
+    },
+    {
         "id": "2560e2c03f783384",
         "type": "mqtt out",
         "z": "c85c8003578c92e6",
@@ -2368,20 +2373,61 @@
         ]
     },
     {
-        "id": "3aaa009cbf55b20c",
-        "type": "e-mail mta",
+        "id": "71a97de79675cc6e",
+        "type": "alexa-home",
         "z": "b389d227e32c6bfb",
-        "name": "",
-        "port": "1025",
-        "secure": false,
-        "starttls": false,
-        "certFile": "",
-        "keyFile": "",
-        "users": [],
-        "auth": false,
-        "expert": "{\"logger\":false}",
-        "x": 260,
-        "y": 160,
+        "conf": "39646c7808ac168e",
+        "device": "197111",
+        "acknoledge": true,
+        "name": "Doorbell",
+        "topic": "",
+        "x": 220,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a0be078265e6d71",
+        "type": "alexa-home",
+        "z": "b389d227e32c6bfb",
+        "conf": "39646c7808ac168e",
+        "device": "197117",
+        "acknoledge": true,
+        "name": "Ring",
+        "topic": "",
+        "x": 210,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc10b74bc4d821d7",
+        "type": "alexa-home",
+        "z": "b389d227e32c6bfb",
+        "conf": "39646c7808ac168e",
+        "device": "197115",
+        "acknoledge": true,
+        "name": "Ring Alerts",
+        "topic": "",
+        "x": 220,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3eca235ef1c6eed",
+        "type": "alexa-home",
+        "z": "b389d227e32c6bfb",
+        "conf": "39646c7808ac168e",
+        "device": "197116",
+        "acknoledge": true,
+        "name": "Door Motion Alert",
+        "topic": "",
+        "x": 240,
+        "y": 340,
         "wires": [
             []
         ]
