@@ -1,0 +1,3595 @@
+[
+    {
+        "id": "c85c8003578c92e6",
+        "type": "tab",
+        "label": "MQTT manage",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3468f95594a76fb5",
+        "type": "tab",
+        "label": "Log Actions",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3b0dc19f6d83de1d",
+        "type": "tab",
+        "label": "UI Control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "72293edee5a49d15",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dcd5ca1077bcc29a",
+        "type": "tab",
+        "label": "Filter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "98eb108101619320",
+        "type": "group",
+        "z": "72293edee5a49d15",
+        "name": "Add Row",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1520a804abfaf47f",
+            "aa4ecdc2634aeba5",
+            "4702fecadd7547a9",
+            "8ee2d51eb630bb9d"
+        ],
+        "x": 54,
+        "y": 539
+    },
+    {
+        "id": "7a700799341b5dae",
+        "type": "group",
+        "z": "72293edee5a49d15",
+        "name": "Update Row",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5d811d8cfd75c5c2",
+            "90d6e50789d87e41",
+            "a9979025aacbcc6f",
+            "1e89f5659eab129d",
+            "458eaff4182ee690"
+        ],
+        "x": 54,
+        "y": 699
+    },
+    {
+        "id": "79fe84cfb68e37d5",
+        "type": "mqtt-broker",
+        "name": "Mosquitto",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "15",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "544be3ea3584d02b",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#713dff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#713dff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#713dff",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#a989ff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#713dff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "702ab0b5f76bbe7a",
+        "type": "ui_group",
+        "name": "Manage Features",
+        "tab": "25a6749ce5d4e430",
+        "order": 2,
+        "disp": true,
+        "width": "5",
+        "collapse": false,
+        "className": "nightmode"
+    },
+    {
+        "id": "124fd84eaf0f984d",
+        "type": "ui_group",
+        "name": "CameraView",
+        "tab": "c593288f9e7f98f6",
+        "order": 1,
+        "disp": true,
+        "width": "11",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "30fe2fdb15b54ae3",
+        "type": "ui_group",
+        "name": "Gestion des empreintes",
+        "tab": "25a6749ce5d4e430",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "49a94d53f452082e",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "25a6749ce5d4e430",
+        "type": "ui_tab",
+        "name": "Settings",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d8ce519417b5cd60",
+        "type": "ui_group",
+        "name": "Current User",
+        "tab": "25a6749ce5d4e430",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c07d094777037409",
+        "type": "postgreSQLConfig",
+        "name": "SmartDoorbell_DB",
+        "host": "localhost",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "SmartDoorbell",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "admin",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "9ea5b1211ce1f538",
+        "type": "ui_group",
+        "name": "Table",
+        "tab": "b840f930a6c2e677",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b840f930a6c2e677",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6b800beeb703abcb",
+        "type": "ui_group",
+        "name": "Table",
+        "tab": "9326f74d2ff7fe25",
+        "order": 1,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9326f74d2ff7fe25",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2a23d1f375db2f69",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "457443a7ef00c356",
+        "type": "ui_group",
+        "name": "Table",
+        "tab": "2a23d1f375db2f69",
+        "order": 2,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "591bf29180ec05c6",
+        "type": "ui_group",
+        "name": "Command",
+        "tab": "2a23d1f375db2f69",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6ea85db8283d411b",
+        "type": "ui_group",
+        "name": "Data",
+        "tab": "2a23d1f375db2f69",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "54b2305af4b37298",
+        "type": "ui_group",
+        "name": "Row",
+        "tab": "2a23d1f375db2f69",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d61766583efd1c8e",
+        "type": "ui_group",
+        "name": "Filter",
+        "tab": "2a23d1f375db2f69",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c593288f9e7f98f6",
+        "type": "ui_tab",
+        "name": "LiveCamera",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9e88d242ff60dbeb",
+        "type": "ui_group",
+        "name": "Log actions",
+        "tab": "25a6749ce5d4e430",
+        "order": 4,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bfaadd0a56cbec3d",
+        "type": "remote-config",
+        "name": "SmartDoorbell UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "15pzq7qia11vcff4pna7hui6sw2xzgfd1ged1906gyl7t4cumh6egbmhh06bx6xv",
+        "server": "nodered03.remote-red.com",
+        "region": "us"
+    },
+    {
+        "id": "0c2696c90ff044e5",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "30fe2fdb15b54ae3",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "957d2429f4947aae",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "702ab0b5f76bbe7a",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e1506a3ab08a2bac",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0bb1fb8ce3611108",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "45bfdc5ef5f634c8",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4a7f1dc34b374257",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cb699d596bd4a764",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "dd8072ea56f5807a",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "24e2fd17d602d21c",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "40fd37664b5b21ed",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f727c8e8266064d4",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "9e88d242ff60dbeb",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2560e2c03f783384",
+        "type": "mqtt out",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "79fe84cfb68e37d5",
+        "x": 1130,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2d9c1534104e360c",
+        "type": "switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 230,
+        "y": 1340,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "56e5d86cbc5981d8",
+        "type": "mqtt in",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "topic": "enroll",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "79fe84cfb68e37d5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 730,
+        "y": 260,
+        "wires": [
+            [
+                "e42398aa0311a569"
+            ]
+        ]
+    },
+    {
+        "id": "a16530aed037f62b",
+        "type": "function",
+        "z": "c85c8003578c92e6",
+        "name": "Set message to display",
+        "func": "msg.payload = \"Enrollement en cours...\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 140,
+        "wires": [
+            [
+                "e42398aa0311a569"
+            ]
+        ]
+    },
+    {
+        "id": "a683b716ea1eec73",
+        "type": "debug",
+        "z": "c85c8003578c92e6",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "858c5444686be692",
+        "type": "ui_button",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "group": "30fe2fdb15b54ae3",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Scan Finger",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "enroll",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "a16530aed037f62b",
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "a6c578f2af4e5e66",
+        "type": "ui_button",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "group": "30fe2fdb15b54ae3",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Delete all fingers",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "clearfinger",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 330,
+        "y": 440,
+        "wires": [
+            [
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "54908942cee4986f",
+        "type": "ui_switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "label": "Ring email alerts",
+        "tooltip": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "email_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "email_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 380,
+        "wires": [
+            [
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "e42398aa0311a569",
+        "type": "ui_text",
+        "z": "c85c8003578c92e6",
+        "group": "30fe2fdb15b54ae3",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Information ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1150,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9916460a07e22838",
+        "type": "ui_template",
+        "z": "c85c8003578c92e6",
+        "d": true,
+        "group": "d61766583efd1c8e",
+        "name": "",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "format": "<div>\n    <img src = \"http://192.168.1.179\" width=\"500\" height=\"500\"\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "05a6291fdd8044d1",
+        "type": "postgresql",
+        "z": "c85c8003578c92e6",
+        "name": "Insert User",
+        "query": "insert into my_users (name,email,register_date)\n\nvalues ($1, $2, now())",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 930,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "909e643485b4e102",
+        "type": "ui_template",
+        "z": "c85c8003578c92e6",
+        "group": "d8ce519417b5cd60",
+        "name": "User Info",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "format": "<style>\n    .user-card {\n    border: 1px solid #ccc;\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n    max-width: 400px;\n    }\n    \n    .user-card img {\n    width: 100%;\n    max-width: 200px;\n    margin-bottom: 10px;\n    }\n    \n    .user-card h3 {\n    font-size: 24px;\n    margin: 0 0 10px;\n    }\n    \n    .user-card p {\n    font-size: 16px;\n    line-height: 1.5;\n    margin: 0 0 20px;\n    }\n    \n    .user-card ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    }\n    \n    .user-card ul li {\n    font-size: 16px;\n    line-height: 1.5;\n    margin-bottom: 5px;\n    }\n    \n    .user-card ul li strong {\n    font-weight: bold;\n    margin-right: 5px;\n    }\n</style>\n<script>\n    (function(scope) {\n    scope.$watch('msg', function(msg) {\n    if (msg) {\n      // Do something when msg arrives\n      var date = msg.payload.register_date.split('T');\n      msg.payload.register_date = date[1].substring(0,8)  + \" le \" + date[0];\n\n    }\n  });\n})(scope);\n</script>\n\n<div class=\"user-card\">\n    <h3 class=\"user-name\">{{msg.payload.name}}</h3>\n    <ul class=\"user-details\">\n        <li><strong>Email : </strong> {{msg.payload.email}}</li>\n        <li><strong>Reg_date : </strong> {{msg.payload.register_date}}</li>\n    </ul>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1140,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df4a802d8970dbcf",
+        "type": "postgresql",
+        "z": "c85c8003578c92e6",
+        "name": "Get User",
+        "query": "SELECT * FROM my_users;",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 920,
+        "y": 640,
+        "wires": [
+            [
+                "909e643485b4e102"
+            ]
+        ]
+    },
+    {
+        "id": "3a3aa81223359edb",
+        "type": "debug",
+        "z": "c85c8003578c92e6",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "ef43d4f2fbb59818",
+        "type": "ui_form",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "label": "Update name and email",
+        "group": "d8ce519417b5cd60",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Name",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "email": ""
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 350,
+        "y": 620,
+        "wires": [
+            [
+                "c87c7da2c019e1e9",
+                "f343a0e56d0cae3e"
+            ]
+        ]
+    },
+    {
+        "id": "c87c7da2c019e1e9",
+        "type": "function",
+        "z": "c85c8003578c92e6",
+        "name": "Add params",
+        "func": "var name = msg.payload.name;\nvar email = msg.payload.email;\nmsg.params = [name, email];\n\nmsg.action_name = \"Name and email updated\";\nmsg.auteur_action = \"Admin\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 700,
+        "wires": [
+            [
+                "05a6291fdd8044d1",
+                "87d73526d7e10490"
+            ]
+        ]
+    },
+    {
+        "id": "cd41e882672c7799",
+        "type": "inject",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "enroll",
+        "payloadType": "str",
+        "x": 250,
+        "y": 1440,
+        "wires": [
+            [
+                "086741b6a3c66c5e"
+            ]
+        ]
+    },
+    {
+        "id": "30f69799dc59b641",
+        "type": "remote-access",
+        "z": "c85c8003578c92e6",
+        "d": true,
+        "confignode": "bfaadd0a56cbec3d",
+        "name": "Remot device",
+        "verbose": 0,
+        "x": 850,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f343a0e56d0cae3e",
+        "type": "delay",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 600,
+        "y": 640,
+        "wires": [
+            [
+                "df4a802d8970dbcf"
+            ]
+        ]
+    },
+    {
+        "id": "1249240f9daf6dfb",
+        "type": "e-mail",
+        "z": "c85c8003578c92e6",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 1130,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "46917b4a6e1c9346",
+        "type": "inject",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ring",
+        "payloadType": "global",
+        "x": 380,
+        "y": 760,
+        "wires": [
+            [
+                "a683b716ea1eec73"
+            ]
+        ]
+    },
+    {
+        "id": "a47a7f054cab6a1c",
+        "type": "ui_ui_control",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "events": "connect",
+        "x": 300,
+        "y": 700,
+        "wires": [
+            [
+                "f343a0e56d0cae3e"
+            ]
+        ]
+    },
+    {
+        "id": "2347f15141e06b0d",
+        "type": "change",
+        "z": "c85c8003578c92e6",
+        "name": "SocketIp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "SocketIp",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 1280,
+        "wires": [
+            [
+                "8928af3bdc5aa467"
+            ]
+        ]
+    },
+    {
+        "id": "8928af3bdc5aa467",
+        "type": "ui_text",
+        "z": "c85c8003578c92e6",
+        "d": true,
+        "group": "702ab0b5f76bbe7a",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SocketIp",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 580,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "d13f3804a5237b0c",
+        "type": "remote-notification",
+        "z": "c85c8003578c92e6",
+        "d": true,
+        "confignode": "",
+        "name": "",
+        "notificationTitle": "payload.title",
+        "notificationTitleType": "msg",
+        "notificationBody": "payload.body",
+        "notificationBodyType": "msg",
+        "notificationSound": "default",
+        "notificationSoundComputed": "payload.sound",
+        "notificationSoundComputedType": "msg",
+        "output": 1,
+        "x": 890,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a317a256d2574a51",
+        "type": "ui_switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "label": "Motion email alerts",
+        "tooltip": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "motion_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "motion_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 260,
+        "wires": [
+            [
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "794a2f4abe8d7cf7",
+        "type": "function",
+        "z": "c85c8003578c92e6",
+        "name": "Set Topic",
+        "func": "if (msg.payload == \"clearfinger\" || msg.payload == \"enroll\"){\n    msg.topic = \"state/finger\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"clearfinger\") ? \"All fingers deleted\" : \"Finger enroll started\";\n    msg.auteur_action = \"Admin\";\n    \n}else if (msg.payload == \"motion_on\" || msg.payload == \"motion_off\"){\n    msg.topic = \"state/motion\";\n    let motion = (msg.payload == \"motion_on\") ? true : false;\n    global.set(\"motion\", motion);\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"motion_on\") ? \"Motion emails activated\" : \"Motion emails deactivated\";\n    msg.auteur_action = \"Device\";\n\n}else if (msg.payload == \"ring_on\" || msg.payload == \"ring_off\"){\n    msg.topic = \"state/ring\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"ring_on\") ? \"Ring song activated\" : \"Ring song deactivated\";\n    msg.auteur_action = \"Admin\";\n\n}else if (msg.payload == \"door_on\" || msg.payload == \"door_off\"){\n    msg.topic = \"state/door\";\n    // Configuration des paramètres de la requête pour stocker dans la base de données\n    msg.action_name = (msg.payload == \"door_on\") ? \"Door opened\" : \"Door closed\";\n    msg.auteur_action = \"Admin\";\n    \n} else if (msg.payload == \"email_on\" || msg.payload == \"email_off\"){\n    msg.topic = \"state/email\";\n    let ring = (msg.payload == \"email_on\") ? true : false;\n    global.set(\"ring\", ring);\n    msg.action_name = (msg.payload == \"email_on\") ? \"Ring email notifications activated\" : \"Ring email notifications deactivated\";\n    msg.auteur_action = \"Admin\";\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 200,
+        "wires": [
+            [
+                "2560e2c03f783384",
+                "2db8770afee653f3"
+            ]
+        ]
+    },
+    {
+        "id": "3e8f832adb9e22cc",
+        "type": "ui_template",
+        "z": "c85c8003578c92e6",
+        "group": "124fd84eaf0f984d",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "\n\n<style>\n\n    .container {\n        display: block;\n        background-color: #f2f2f2;\n        border: 1px solid #ccc;\n        padding: 20px;\n    }\n    button:hover {\n    background-color: #3e8e41;\n    }\n\n    button:active {\n    background-color: #3e8e41;\n    box-shadow: 0 2px #666;\n    transform: translateY(2px);\n    }\n    .hide {\n        display: none;\n    }\n\n    button {\n        background-color: #4CAF50;\n        border: none;\n        color: white;\n        padding: 15px 32px;\n        text-align: center;\n        text-decoration: none;\n        display: inline-block;\n        font-size: 16px;\n        margin-top: 20px;\n        cursor: pointer;\n    }\n</style>\n\n    <div class=\"container\">\n        <!-- <button  onclick=\"toggle()\">Masquer/Afficher</button>\n        <p>Cliquez sur le bouton ci-dessous pour masquer/afficher la section :</p> !-->\n        <div id=\"myDiv\">\n            <p><img src = \"http://192.168.1.185/\" width=\"535\" height=\"450\"></p>\n        </div>\n        \n    </div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 20,
+        "wires": [
+            [
+                "09c5cc4156a3bb2c"
+            ]
+        ]
+    },
+    {
+        "id": "6e29599bd3c4f2ce",
+        "type": "function",
+        "z": "c85c8003578c92e6",
+        "name": "function 1",
+        "func": "msg.to = msg.payload.email;\nmsg.topic = \"Notice\";\nmsg.payload = \"Courriel envoyé !\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 520,
+        "wires": [
+            [
+                "90a3269c37501ea2"
+            ]
+        ]
+    },
+    {
+        "id": "531b23be4938470d",
+        "type": "ui_button",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "group": "124fd84eaf0f984d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Back to Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "bde0ab41f4a3acd5"
+            ]
+        ]
+    },
+    {
+        "id": "bde0ab41f4a3acd5",
+        "type": "change",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"Settings\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 80,
+        "wires": [
+            [
+                "c0853e3b31a3a2dc"
+            ]
+        ]
+    },
+    {
+        "id": "c0853e3b31a3a2dc",
+        "type": "ui_ui_control",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "events": "all",
+        "x": 1140,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "09c5cc4156a3bb2c",
+        "type": "change",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tab\":\"LiveCamera\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 20,
+        "wires": [
+            [
+                "df2a0c6fc94f44e3"
+            ]
+        ]
+    },
+    {
+        "id": "df2a0c6fc94f44e3",
+        "type": "ui_ui_control",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "events": "all",
+        "x": 1140,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2724322f130debba",
+        "type": "ui_button",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Live Camera",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 20,
+        "wires": [
+            [
+                "3e8f832adb9e22cc"
+            ]
+        ]
+    },
+    {
+        "id": "ae63001b0d02c085",
+        "type": "mqtt in",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "topic": "value/motion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "79fe84cfb68e37d5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 840,
+        "wires": [
+            [
+                "8fb61193837ca0c0"
+            ]
+        ]
+    },
+    {
+        "id": "3a618e78fe984bf5",
+        "type": "postgresql",
+        "z": "c85c8003578c92e6",
+        "name": "Email from DB",
+        "query": "SELECT email FROM my_users;",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 620,
+        "y": 560,
+        "wires": [
+            [
+                "6e29599bd3c4f2ce",
+                "37617617d0b0da6f"
+            ]
+        ]
+    },
+    {
+        "id": "90a3269c37501ea2",
+        "type": "ui_toast",
+        "z": "c85c8003578c92e6",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "blue",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1170,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "c39dbb7651a5de89",
+        "type": "ui_button",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Test email",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "enroll",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 560,
+        "wires": [
+            [
+                "3a618e78fe984bf5"
+            ]
+        ]
+    },
+    {
+        "id": "2db8770afee653f3",
+        "type": "link out",
+        "z": "c85c8003578c92e6",
+        "name": "Actions Out",
+        "mode": "link",
+        "links": [
+            "5603406bd3825e58"
+        ],
+        "x": 825,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "49140de42ac47116",
+        "type": "ui_switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "label": "Door opened",
+        "tooltip": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "door_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "door_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 310,
+        "y": 200,
+        "wires": [
+            [
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "c934634964ee12e1",
+        "type": "mqtt in",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "topic": "update/features",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "79fe84cfb68e37d5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 500,
+        "wires": [
+            [
+                "3e2ee09aa2f38c25",
+                "2d6ac883ec27cf84"
+            ]
+        ]
+    },
+    {
+        "id": "37617617d0b0da6f",
+        "type": "function",
+        "z": "c85c8003578c92e6",
+        "name": "function 2",
+        "func": "msg.to = msg.payload.email;\nmsg.topic = \"Alert\";\nmsg.payload = \"<h1>Couriel de test !</h1>\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 580,
+        "wires": [
+            [
+                "1249240f9daf6dfb"
+            ]
+        ]
+    },
+    {
+        "id": "87d73526d7e10490",
+        "type": "link out",
+        "z": "c85c8003578c92e6",
+        "name": "Actions Out",
+        "mode": "link",
+        "links": [
+            "5603406bd3825e58"
+        ],
+        "x": 875,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "3e2ee09aa2f38c25",
+        "type": "switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "door",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "motion",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "ring",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "email",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "49140de42ac47116"
+            ],
+            [
+                "a317a256d2574a51"
+            ],
+            [
+                "7c26bac27140712f"
+            ],
+            [
+                "54908942cee4986f"
+            ]
+        ]
+    },
+    {
+        "id": "2d6ac883ec27cf84",
+        "type": "function",
+        "z": "c85c8003578c92e6",
+        "name": "Set Global feature state",
+        "func": "if(msg.payload == \"start\"){\n    global.set(\"motion\", false);\n    global.set(\"ring\", false);\n}",
+        "outputs": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "7c26bac27140712f",
+        "type": "ui_switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "label": "Ring song alerts",
+        "tooltip": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ring_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "ring_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 320,
+        "y": 320,
+        "wires": [
+            [
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "66ec6b652e729128",
+        "type": "debug",
+        "z": "c85c8003578c92e6",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "6a2107f5efda6bdf",
+        "type": "debug",
+        "z": "c85c8003578c92e6",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "086741b6a3c66c5e",
+        "type": "mqtt out",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "topic": "state/motion",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "79fe84cfb68e37d5",
+        "x": 510,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "3b02187d231a5e39",
+        "type": "switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "property": "motion",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 900,
+        "wires": [
+            [
+                "81f3063755deeaf4"
+            ]
+        ]
+    },
+    {
+        "id": "ddc815a61907527b",
+        "type": "switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "property": "ring",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 960,
+        "wires": [
+            [
+                "e427f58adeaa7772"
+            ]
+        ]
+    },
+    {
+        "id": "f76cb5d4a49fe9b8",
+        "type": "function",
+        "z": "c85c8003578c92e6",
+        "name": "Set motion email",
+        "func": "msg.to = msg.payload.email;\nmsg.topic = \"Motion detected\";\nmsg.payload = \"Someone's near the door, be carefull and watch out...\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 880,
+        "wires": [
+            [
+                "1b18e39ed7befe11"
+            ]
+        ]
+    },
+    {
+        "id": "a9c947ad79f8632c",
+        "type": "postgresql",
+        "z": "c85c8003578c92e6",
+        "name": "Email from DB",
+        "query": "SELECT email FROM my_users;",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 760,
+        "y": 880,
+        "wires": [
+            [
+                "f76cb5d4a49fe9b8"
+            ]
+        ]
+    },
+    {
+        "id": "1b18e39ed7befe11",
+        "type": "e-mail",
+        "z": "c85c8003578c92e6",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 1190,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "bc0fc0dcba23e1ff",
+        "type": "postgresql",
+        "z": "c85c8003578c92e6",
+        "name": "Email from DB",
+        "query": "SELECT email FROM my_users;",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 760,
+        "y": 940,
+        "wires": [
+            [
+                "bebc82161e63d0ff"
+            ]
+        ]
+    },
+    {
+        "id": "bebc82161e63d0ff",
+        "type": "function",
+        "z": "c85c8003578c92e6",
+        "name": "Set ring email",
+        "func": "msg.to = msg.payload.email;\nmsg.topic = \"Someone rings the doorbell\";\nmsg.payload = \"Personne détectée devant votre porte...\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 940,
+        "wires": [
+            [
+                "8502c06817694499"
+            ]
+        ]
+    },
+    {
+        "id": "8502c06817694499",
+        "type": "e-mail",
+        "z": "c85c8003578c92e6",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 1190,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "8de6d25f7a8569e5",
+        "type": "inject",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "get",
+        "payloadType": "str",
+        "x": 90,
+        "y": 1040,
+        "wires": [
+            [
+                "8fb61193837ca0c0"
+            ]
+        ]
+    },
+    {
+        "id": "8fb61193837ca0c0",
+        "type": "function",
+        "z": "c85c8003578c92e6",
+        "name": "function 4",
+        "func": "msg.ring = global.get(\"ring\");\nmsg.motion = global.get(\"motion\");\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 940,
+        "wires": [
+            [
+                "b01baceb75d4b433",
+                "5b20f9475d414b06"
+            ]
+        ]
+    },
+    {
+        "id": "8ffa2e3e533d9836",
+        "type": "trigger",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 880,
+        "y": 380,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9c30276b3b7dd3f9",
+        "type": "inject",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "6",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "15",
+        "payloadType": "num",
+        "x": 630,
+        "y": 380,
+        "wires": [
+            [
+                "8ffa2e3e533d9836"
+            ]
+        ]
+    },
+    {
+        "id": "81f3063755deeaf4",
+        "type": "trigger",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 580,
+        "y": 860,
+        "wires": [
+            [
+                "a9c947ad79f8632c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e427f58adeaa7772",
+        "type": "trigger",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 2,
+        "x": 600,
+        "y": 1000,
+        "wires": [
+            [
+                "bc0fc0dcba23e1ff"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b01baceb75d4b433",
+        "type": "switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "motion",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 900,
+        "wires": [
+            [
+                "3b02187d231a5e39"
+            ]
+        ]
+    },
+    {
+        "id": "5b20f9475d414b06",
+        "type": "switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "ring",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 960,
+        "wires": [
+            [
+                "ddc815a61907527b"
+            ]
+        ]
+    },
+    {
+        "id": "5603406bd3825e58",
+        "type": "link in",
+        "z": "3468f95594a76fb5",
+        "name": "Actions In",
+        "links": [
+            "2db8770afee653f3",
+            "87d73526d7e10490"
+        ],
+        "x": 165,
+        "y": 260,
+        "wires": [
+            [
+                "afed3706510d29ed",
+                "1d8e33de4a958fe6"
+            ]
+        ]
+    },
+    {
+        "id": "3662c13d201a10fe",
+        "type": "ui_table",
+        "z": "3468f95594a76fb5",
+        "group": "9e88d242ff60dbeb",
+        "name": "Log",
+        "order": 2,
+        "width": "10",
+        "height": "8",
+        "columns": [
+            {
+                "field": "action_name",
+                "title": "Action",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "date_action",
+                "title": "Date",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "auteur_action",
+                "title": "Author",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 1170,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "505765bc71513328",
+        "type": "debug",
+        "z": "3468f95594a76fb5",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d8f627d71384ba9f",
+        "type": "postgresql",
+        "z": "3468f95594a76fb5",
+        "name": "Insert User",
+        "query": "insert into \"log\" (action_name,auteur_action,date_action)\n\nvalues ($1, $2, now())",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 750,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "afed3706510d29ed",
+        "type": "function",
+        "z": "3468f95594a76fb5",
+        "name": "Add params",
+        "func": "\nmsg.params = [msg.action_name, msg.auteur_action];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 360,
+        "wires": [
+            [
+                "d8f627d71384ba9f"
+            ]
+        ]
+    },
+    {
+        "id": "a69666d8810ee249",
+        "type": "ui_ui_control",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "events": "connect",
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "86125a0aec959a9a"
+            ]
+        ]
+    },
+    {
+        "id": "86125a0aec959a9a",
+        "type": "postgresql",
+        "z": "3468f95594a76fb5",
+        "name": "Get log data",
+        "query": "select * from log order by date_action desc",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 650,
+        "y": 120,
+        "wires": [
+            [
+                "d824082137c3e559"
+            ]
+        ]
+    },
+    {
+        "id": "1d8e33de4a958fe6",
+        "type": "delay",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "f2a6190b6225abd3"
+            ]
+        ]
+    },
+    {
+        "id": "f2a6190b6225abd3",
+        "type": "change",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "params",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 200,
+        "wires": [
+            [
+                "86125a0aec959a9a"
+            ]
+        ]
+    },
+    {
+        "id": "d824082137c3e559",
+        "type": "function",
+        "z": "3468f95594a76fb5",
+        "name": "change date format",
+        "func": "if(msg.payload.length == 0)\n    return msg;\n\nvar date = new Date((msg.payload[0].date_action));\n\nvar day = (\"0\" + date.getDate()).slice(-2); // ajouter un zéro devant le jour si nécessaire\nvar month = (\"0\" + (date.getMonth() + 1)).slice(-2); // ajouter un zéro devant le mois si nécessaire\nvar year = date.getFullYear(); // obtenir l'année\nvar hours = (\"0\" + date.getHours()).slice(-2); // ajouter un zéro devant les heures si nécessaire\nvar minutes = (\"0\" + date.getMinutes()).slice(-2); // ajouter un zéro devant les minutes si nécessaire\nvar seconds = (\"0\" + date.getSeconds()).slice(-2); // ajouter un zéro devant les secondes si nécessaire\n\nvar dateFormatted = day + \"/\" + month + \"/\" + year + \" \" + hours + \":\" + minutes + \":\" + seconds; // formater la date et l'heure dans le format souhaité\n\nfor (let index = 0; index < msg.payload.length; index++) {\n    var date = new Date((msg.payload[index].date_action));\n\n    var day = (\"0\" + date.getDate()).slice(-2); // ajouter un zéro devant le jour si nécessaire\n    var month = (\"0\" + (date.getMonth() + 1)).slice(-2); // ajouter un zéro devant le mois si nécessaire\n    var year = date.getFullYear(); // obtenir l'année\n    var hours = (\"0\" + date.getHours()).slice(-2); // ajouter un zéro devant les heures si nécessaire\n    var minutes = (\"0\" + date.getMinutes()).slice(-2); // ajouter un zéro devant les minutes si nécessaire\n    var seconds = (\"0\" + date.getSeconds()).slice(-2); // ajouter un zéro devant les secondes si nécessaire\n\n    var dateFormatted = \"Le \" + day + \"/\" + month + \"/\" + year + \" à \" + hours + \":\" + minutes + \":\" + seconds; // formater la date et l'heure dans le format souhaité\n    msg.payload[index].date_action = dateFormatted;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "moment",
+                "module": "moment"
+            }
+        ],
+        "x": 890,
+        "y": 120,
+        "wires": [
+            [
+                "3662c13d201a10fe"
+            ]
+        ]
+    },
+    {
+        "id": "7b72eb895bd0e743",
+        "type": "ui_button",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "group": "9e88d242ff60dbeb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Delete all logs",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "delete",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 480,
+        "y": 280,
+        "wires": [
+            [
+                "3d34fa6f7fb22969"
+            ]
+        ]
+    },
+    {
+        "id": "3d34fa6f7fb22969",
+        "type": "postgresql",
+        "z": "3468f95594a76fb5",
+        "name": "Delete logs",
+        "query": "delete from log",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 750,
+        "y": 280,
+        "wires": [
+            [
+                "6e3ad336749a5d01",
+                "c322903d47b5365d"
+            ]
+        ]
+    },
+    {
+        "id": "6e3ad336749a5d01",
+        "type": "delay",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 200,
+        "wires": [
+            [
+                "86125a0aec959a9a"
+            ]
+        ]
+    },
+    {
+        "id": "c322903d47b5365d",
+        "type": "function",
+        "z": "3468f95594a76fb5",
+        "name": "function 3",
+        "func": "\nmsg.topic = \"Notification\";\nmsg.payload = \"All log deleted succefully...\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 280,
+        "wires": [
+            [
+                "7cf1c56a0a05cbd2"
+            ]
+        ]
+    },
+    {
+        "id": "7cf1c56a0a05cbd2",
+        "type": "ui_toast",
+        "z": "3468f95594a76fb5",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "blue",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1190,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "146621db7f77c288",
+        "type": "link in",
+        "z": "3b0dc19f6d83de1d",
+        "name": "Control In",
+        "links": [
+            "d1444e58018d1acf",
+            "b4d188f88c6ac618",
+            "e4aa0f21f5629672",
+            "a7e2e61a1efd53e9",
+            "90bb6e31357da1bc"
+        ],
+        "x": 185,
+        "y": 100,
+        "wires": [
+            [
+                "a83600909d61c828"
+            ]
+        ]
+    },
+    {
+        "id": "a83600909d61c828",
+        "type": "ui_ui_control",
+        "z": "3b0dc19f6d83de1d",
+        "name": "",
+        "events": "all",
+        "x": 700,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7caf8abd34f0d96f",
+        "type": "ui_ui_control",
+        "z": "3b0dc19f6d83de1d",
+        "name": "",
+        "events": "all",
+        "x": 240,
+        "y": 180,
+        "wires": [
+            [
+                "fc629ab61d1b545b"
+            ]
+        ]
+    },
+    {
+        "id": "fc629ab61d1b545b",
+        "type": "change",
+        "z": "3b0dc19f6d83de1d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Dashboard_Data\",\"Dashboard_Row\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "a83600909d61c828"
+            ]
+        ]
+    },
+    {
+        "id": "bd639f578d9b9e61",
+        "type": "debug",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9b06f3d9cb00a06a",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "selectedRow",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "080a07b89a214fde",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Dashboard_Row\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 280,
+        "wires": [
+            [
+                "f6d0d67b6c32bf81"
+            ]
+        ]
+    },
+    {
+        "id": "f6d0d67b6c32bf81",
+        "type": "link out",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "c1cb199d0401309a"
+        ],
+        "x": 1355,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "152cbd4cd44d3f71",
+        "type": "ui_button",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "group": "591bf29180ec05c6",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Clear Table",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "fa-trash",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 550,
+        "y": 320,
+        "wires": [
+            [
+                "c0d23d9737260bb3"
+            ]
+        ]
+    },
+    {
+        "id": "c0d23d9737260bb3",
+        "type": "function",
+        "z": "72293edee5a49d15",
+        "name": "clearData",
+        "func": "msg.payload = {\n    \"command\" : \"clearData\",\n    arguments: []\n}\n\nflow.set(\"id\", 0)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 320,
+        "wires": [
+            [
+                "40879d3082ca38ef"
+            ]
+        ]
+    },
+    {
+        "id": "1520a804abfaf47f",
+        "type": "ui_button",
+        "z": "72293edee5a49d15",
+        "g": "98eb108101619320",
+        "name": "",
+        "group": "591bf29180ec05c6",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Add Row",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-plus-square",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 580,
+        "wires": [
+            [
+                "aa4ecdc2634aeba5",
+                "4702fecadd7547a9"
+            ]
+        ]
+    },
+    {
+        "id": "aa4ecdc2634aeba5",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "g": "98eb108101619320",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "addRow",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4702fecadd7547a9",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "g": "98eb108101619320",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Dashboard_Data\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 620,
+        "wires": [
+            [
+                "8ee2d51eb630bb9d"
+            ]
+        ]
+    },
+    {
+        "id": "8ee2d51eb630bb9d",
+        "type": "link out",
+        "z": "72293edee5a49d15",
+        "g": "98eb108101619320",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "c1cb199d0401309a"
+        ],
+        "x": 535,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "75753877884be513",
+        "type": "ui_form",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "label": "Form",
+        "group": "6ea85db8283d411b",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Name",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Age",
+                "value": "age",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "age": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "e17e987a33cd89b2",
+                "70d33568aefec87e"
+            ]
+        ]
+    },
+    {
+        "id": "70d33568aefec87e",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Dashboard_Data\",\"Dashboard_Row\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 200,
+        "wires": [
+            [
+                "426f27a317290927"
+            ]
+        ]
+    },
+    {
+        "id": "e17e987a33cd89b2",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "msg",
+                "to": "command",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 240,
+        "wires": [
+            [
+                "07bf5c18371d5fc9"
+            ]
+        ]
+    },
+    {
+        "id": "426f27a317290927",
+        "type": "link out",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "c1cb199d0401309a"
+        ],
+        "x": 515,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "07bf5c18371d5fc9",
+        "type": "switch",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "property": "command",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "addRow",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "updateOrAddData",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "42d1a76784283b89"
+            ],
+            [
+                "fc670f45b1adce5f"
+            ]
+        ]
+    },
+    {
+        "id": "42d1a76784283b89",
+        "type": "function",
+        "z": "72293edee5a49d15",
+        "name": "addRow",
+        "func": "// set msg.payload to variable\nvar inp = msg.payload\n\n// get id from flow variable => default 0\nvar id = flow.get(\"id\") || 0\n\n// increase id by 1\nid ++\n\n// set customer id to id\ninp.id = id\n\n// set flow variable to id\nflow.set(\"id\", id)\n\n// Table command\nmsg.payload = {\n    command : \"addRow\",\n    arguments : [\n        [inp],\n        true\n    ]\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 220,
+        "wires": [
+            [
+                "40879d3082ca38ef"
+            ]
+        ]
+    },
+    {
+        "id": "fc670f45b1adce5f",
+        "type": "function",
+        "z": "72293edee5a49d15",
+        "name": "updateRow",
+        "func": "// set inp to msg.payload\nconst inp = msg.payload\n\n// read selectedRow\nvar row = flow.get(\"selectedRow\")\n\n// update data\nrow.name = inp.name\nrow.age = inp.age\n\n\n// set command\nmsg.payload = {\n    command : \"updateOrAddData\",\n    arguments : [\n        [row]\n    ]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 260,
+        "wires": [
+            [
+                "40879d3082ca38ef"
+            ]
+        ]
+    },
+    {
+        "id": "70509cdfced7f2dc",
+        "type": "ui_button",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "group": "54b2305af4b37298",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Delete Row",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "fa-trash",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [
+                "f6424feba91c3748",
+                "aeda3dbc2238cc13"
+            ]
+        ]
+    },
+    {
+        "id": "f6424feba91c3748",
+        "type": "function",
+        "z": "72293edee5a49d15",
+        "name": "deleteRow",
+        "func": "// get selectedRow\nconst row = flow.get(\"selectedRow\")\n\n// define command\nmsg.payload = {\n    command : \"deleteRow\",\n    arguments : [row.id]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 380,
+        "wires": [
+            [
+                "40879d3082ca38ef"
+            ]
+        ]
+    },
+    {
+        "id": "aeda3dbc2238cc13",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Dashboard_Data\",\"Dashboard_Row\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 420,
+        "wires": [
+            [
+                "8b8b7efd689cd526"
+            ]
+        ]
+    },
+    {
+        "id": "8b8b7efd689cd526",
+        "type": "link out",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "c1cb199d0401309a"
+        ],
+        "x": 955,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9f6bc991d41fba2a",
+        "type": "ui_button",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "group": "6ea85db8283d411b",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Dismiss",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "fa-trash",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "70d33568aefec87e",
+                "ada0d39fddfa5fe2"
+            ]
+        ]
+    },
+    {
+        "id": "ada0d39fddfa5fe2",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"name\":\"\",\"age\":\"\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 300,
+        "wires": [
+            [
+                "75753877884be513"
+            ]
+        ]
+    },
+    {
+        "id": "5d811d8cfd75c5c2",
+        "type": "ui_button",
+        "z": "72293edee5a49d15",
+        "g": "7a700799341b5dae",
+        "name": "",
+        "group": "54b2305af4b37298",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Update Row",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-pencil",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 740,
+        "wires": [
+            [
+                "90d6e50789d87e41",
+                "a9979025aacbcc6f",
+                "1e89f5659eab129d"
+            ]
+        ]
+    },
+    {
+        "id": "90d6e50789d87e41",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "g": "7a700799341b5dae",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "selectedRow",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 740,
+        "wires": [
+            [
+                "75753877884be513"
+            ]
+        ]
+    },
+    {
+        "id": "a9979025aacbcc6f",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "g": "7a700799341b5dae",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "flow",
+                "to": "updateOrAddData",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e89f5659eab129d",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "g": "7a700799341b5dae",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Dashboard_Data\"],\"hide\":[\"Dashboard_Row\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 820,
+        "wires": [
+            [
+                "458eaff4182ee690"
+            ]
+        ]
+    },
+    {
+        "id": "458eaff4182ee690",
+        "type": "link out",
+        "z": "72293edee5a49d15",
+        "g": "7a700799341b5dae",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "c1cb199d0401309a"
+        ],
+        "x": 545,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "8ae72d2425bebdf2",
+        "type": "ui_button",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "group": "591bf29180ec05c6",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Filter",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-filter",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 500,
+        "wires": [
+            [
+                "1931724ed0d68577"
+            ]
+        ]
+    },
+    {
+        "id": "1931724ed0d68577",
+        "type": "change",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Dashboard_Filter\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 500,
+        "wires": [
+            [
+                "f87bf5a1dcb7b868"
+            ]
+        ]
+    },
+    {
+        "id": "f87bf5a1dcb7b868",
+        "type": "link out",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "c1cb199d0401309a"
+        ],
+        "x": 955,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "b41cb7362563fcf0",
+        "type": "link in",
+        "z": "72293edee5a49d15",
+        "name": "",
+        "links": [
+            "7c99745b65c37488"
+        ],
+        "x": 805,
+        "y": 180,
+        "wires": [
+            [
+                "40879d3082ca38ef"
+            ]
+        ]
+    },
+    {
+        "id": "40879d3082ca38ef",
+        "type": "ui_table",
+        "z": "72293edee5a49d15",
+        "group": "457443a7ef00c356",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "columns": [
+            {
+                "field": "id",
+                "title": "Customer ID",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "name",
+                "title": "Name",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "age",
+                "title": "Age",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 970,
+        "y": 240,
+        "wires": [
+            [
+                "bd639f578d9b9e61",
+                "9b06f3d9cb00a06a",
+                "080a07b89a214fde"
+            ]
+        ]
+    },
+    {
+        "id": "19266faaca2052b9",
+        "type": "ui_dropdown",
+        "z": "dcd5ca1077bcc29a",
+        "name": "",
+        "label": "Field",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "d61766583efd1c8e",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Customer Id",
+                "value": "id",
+                "type": "str"
+            },
+            {
+                "label": "Name",
+                "value": "name",
+                "type": "str"
+            },
+            {
+                "label": "Age",
+                "value": "age",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "145bd606bd29faf7"
+            ]
+        ]
+    },
+    {
+        "id": "fb54bfa1e2a76be0",
+        "type": "ui_dropdown",
+        "z": "dcd5ca1077bcc29a",
+        "name": "",
+        "label": "Type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "d61766583efd1c8e",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "=",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "!=",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "like",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "<",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "<=",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": ">",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": ">=",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "c625a135ca20fcbc"
+            ]
+        ]
+    },
+    {
+        "id": "e42345c14821e438",
+        "type": "ui_text_input",
+        "z": "dcd5ca1077bcc29a",
+        "name": "",
+        "label": "Value",
+        "tooltip": "",
+        "group": "d61766583efd1c8e",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "d51f5bb6e3fdb8af"
+            ]
+        ]
+    },
+    {
+        "id": "145bd606bd29faf7",
+        "type": "change",
+        "z": "dcd5ca1077bcc29a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filter.field",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c625a135ca20fcbc",
+        "type": "change",
+        "z": "dcd5ca1077bcc29a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filter.type",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d51f5bb6e3fdb8af",
+        "type": "change",
+        "z": "dcd5ca1077bcc29a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filter.value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66f7e3037478cf17",
+        "type": "ui_button",
+        "z": "dcd5ca1077bcc29a",
+        "name": "",
+        "group": "d61766583efd1c8e",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Apply Filter",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-filter",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "2e58c0193c2b662e",
+                "fc5f57a611db8fd0"
+            ]
+        ]
+    },
+    {
+        "id": "2e58c0193c2b662e",
+        "type": "function",
+        "z": "dcd5ca1077bcc29a",
+        "name": "Construct Filter",
+        "func": "// get filter obj\nconst filter = flow.get(\"filter\");\n\n// define payload\nmsg.payload = {\n    command: \"setFilter\",\n    arguments: [\n        filter.field,\n        filter.type,\n        filter.value\n    ]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 340,
+        "wires": [
+            [
+                "7c99745b65c37488"
+            ]
+        ]
+    },
+    {
+        "id": "7c99745b65c37488",
+        "type": "link out",
+        "z": "dcd5ca1077bcc29a",
+        "name": "Filter Out",
+        "mode": "link",
+        "links": [
+            "b41cb7362563fcf0"
+        ],
+        "x": 555,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "97864f90ce446a7c",
+        "type": "ui_button",
+        "z": "dcd5ca1077bcc29a",
+        "name": "",
+        "group": "d61766583efd1c8e",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Clear Filter",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "fa-trash",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "0710c27a3d422b56",
+                "fc5f57a611db8fd0"
+            ]
+        ]
+    },
+    {
+        "id": "0710c27a3d422b56",
+        "type": "change",
+        "z": "dcd5ca1077bcc29a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"command\":\"setFilter\",\"arguments\":[]}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 400,
+        "wires": [
+            [
+                "7c99745b65c37488"
+            ]
+        ]
+    },
+    {
+        "id": "fc5f57a611db8fd0",
+        "type": "change",
+        "z": "dcd5ca1077bcc29a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Dashboard_Filter\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 460,
+        "wires": [
+            [
+                "733b0710ba7f8052"
+            ]
+        ]
+    },
+    {
+        "id": "733b0710ba7f8052",
+        "type": "link out",
+        "z": "dcd5ca1077bcc29a",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "c1cb199d0401309a"
+        ],
+        "x": 555,
+        "y": 460,
+        "wires": []
+    }
+]

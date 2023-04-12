@@ -1,5 +1,7 @@
-SmartDoorbell-NodeRED
-=====================
+Workflow-SmartDoorbell
+======================
+
+Projet de fin d'études dans le programme "Internet des Objets" au Collège Communautaire du Nouveau-Brunswick (CCNB)
 
 ### About
 
