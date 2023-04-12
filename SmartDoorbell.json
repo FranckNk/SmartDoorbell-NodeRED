@@ -2384,7 +2384,9 @@
         "x": 220,
         "y": 220,
         "wires": [
-            []
+            [
+                "d3bf002f69e1e301"
+            ]
         ]
     },
     {
@@ -2399,7 +2401,9 @@
         "x": 210,
         "y": 420,
         "wires": [
-            []
+            [
+                "d3bf002f69e1e301"
+            ]
         ]
     },
     {
@@ -2414,7 +2418,9 @@
         "x": 220,
         "y": 280,
         "wires": [
-            []
+            [
+                "d3bf002f69e1e301"
+            ]
         ]
     },
     {
@@ -2429,7 +2435,37 @@
         "x": 240,
         "y": 340,
         "wires": [
-            []
+            [
+                "d3bf002f69e1e301"
+            ]
         ]
+    },
+    {
+        "id": "d3bf002f69e1e301",
+        "type": "debug",
+        "z": "b389d227e32c6bfb",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "817f09dd9d9a240d",
+        "type": "link out",
+        "z": "b389d227e32c6bfb",
+        "name": "Alexa Out",
+        "mode": "link",
+        "links": [],
+        "x": 765,
+        "y": 180,
+        "wires": []
     }
 ]
