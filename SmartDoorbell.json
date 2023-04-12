@@ -2366,5 +2366,24 @@
                 "a83600909d61c828"
             ]
         ]
+    },
+    {
+        "id": "3aaa009cbf55b20c",
+        "type": "e-mail mta",
+        "z": "b389d227e32c6bfb",
+        "name": "",
+        "port": "1025",
+        "secure": false,
+        "starttls": false,
+        "certFile": "",
+        "keyFile": "",
+        "users": [],
+        "auth": false,
+        "expert": "{\"logger\":false}",
+        "x": 260,
+        "y": 160,
+        "wires": [
+            []
+        ]
     }
 ]
