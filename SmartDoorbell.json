@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "b389d227e32c6bfb",
+        "type": "tab",
+        "label": "Alexa",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "3468f95594a76fb5",
         "type": "tab",
         "label": "Log Actions",
@@ -19,14 +27,6 @@
         "id": "3b0dc19f6d83de1d",
         "type": "tab",
         "label": "UI Control",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "b389d227e32c6bfb",
-        "type": "tab",
-        "label": "Alexa",
         "disabled": false,
         "info": "",
         "env": []
@@ -362,7 +362,7 @@
         "tab": "25a6749ce5d4e430",
         "order": 4,
         "disp": true,
-        "width": 10,
+        "width": "10",
         "collapse": false,
         "className": ""
     },
@@ -379,7 +379,12 @@
         "region": "us"
     },
     {
-        "id": "0c2696c90ff044e5",
+        "id": "39646c7808ac168e",
+        "type": "alexa-home-conf",
+        "username": "francknk"
+    },
+    {
+        "id": "73a14bf1473fbdb9",
         "type": "ui_spacer",
         "z": "c85c8003578c92e6",
         "name": "spacer",
@@ -389,109 +394,40 @@
         "height": 1
     },
     {
-        "id": "957d2429f4947aae",
+        "id": "65b4562c7bef0385",
         "type": "ui_spacer",
         "z": "c85c8003578c92e6",
         "name": "spacer",
         "group": "702ab0b5f76bbe7a",
         "order": 7,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "e1506a3ab08a2bac",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "9e88d242ff60dbeb",
-        "order": 3,
         "width": 1,
         "height": 1
     },
     {
-        "id": "0bb1fb8ce3611108",
+        "id": "b51e46c578e6effc",
         "type": "ui_spacer",
         "z": "c85c8003578c92e6",
         "name": "spacer",
-        "group": "9e88d242ff60dbeb",
-        "order": 4,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "45bfdc5ef5f634c8",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "9e88d242ff60dbeb",
-        "order": 5,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "4a7f1dc34b374257",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "9e88d242ff60dbeb",
-        "order": 6,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "cb699d596bd4a764",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "9e88d242ff60dbeb",
-        "order": 7,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "dd8072ea56f5807a",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "9e88d242ff60dbeb",
-        "order": 8,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "24e2fd17d602d21c",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "9e88d242ff60dbeb",
+        "group": "702ab0b5f76bbe7a",
         "order": 9,
         "width": 1,
         "height": 1
     },
     {
-        "id": "40fd37664b5b21ed",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "9e88d242ff60dbeb",
-        "order": 10,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "f727c8e8266064d4",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "9e88d242ff60dbeb",
-        "order": 11,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "39646c7808ac168e",
-        "type": "alexa-home-conf",
-        "username": "francknk"
+        "id": "b005df8d504ca366",
+        "type": "alexa-remote-account",
+        "name": "Franck Account",
+        "authMethod": "proxy",
+        "proxyOwnIp": "192.168.2.75",
+        "proxyPort": "3456",
+        "cookieFile": "",
+        "refreshInterval": "10",
+        "alexaServiceHost": "alexa.amazon.com",
+        "amazonPage": "amazon.ca",
+        "acceptLanguage": "en-CA",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
     },
     {
         "id": "2560e2c03f783384",
@@ -1011,7 +947,7 @@
         "z": "c85c8003578c92e6",
         "d": true,
         "group": "702ab0b5f76bbe7a",
-        "order": 8,
+        "order": 6,
         "width": 0,
         "height": 0,
         "name": "",
@@ -1107,7 +1043,7 @@
         "order": 1,
         "width": 0,
         "height": 0,
-        "format": "\n\n<style>\n\n    .container {\n        display: block;\n        background-color: #f2f2f2;\n        border: 1px solid #ccc;\n        padding: 20px;\n    }\n    button:hover {\n    background-color: #3e8e41;\n    }\n\n    button:active {\n    background-color: #3e8e41;\n    box-shadow: 0 2px #666;\n    transform: translateY(2px);\n    }\n    .hide {\n        display: none;\n    }\n\n    button {\n        background-color: #4CAF50;\n        border: none;\n        color: white;\n        padding: 15px 32px;\n        text-align: center;\n        text-decoration: none;\n        display: inline-block;\n        font-size: 16px;\n        margin-top: 20px;\n        cursor: pointer;\n    }\n</style>\n\n    <div class=\"container\">\n        <!-- <button  onclick=\"toggle()\">Masquer/Afficher</button>\n        <p>Cliquez sur le bouton ci-dessous pour masquer/afficher la section :</p> !-->\n        <div id=\"myDiv\">\n            <p><img src = \"http://192.168.1.185/\" width=\"535\" height=\"450\"></p>\n        </div>\n        \n    </div>",
+        "format": "\n\n<style>\n\n    .container {\n        display: block;\n        background-color: #f2f2f2;\n        border: 1px solid #ccc;\n        padding: 20px;\n    }\n    button:hover {\n    background-color: #3e8e41;\n    }\n\n    button:active {\n    background-color: #3e8e41;\n    box-shadow: 0 2px #666;\n    transform: translateY(2px);\n    }\n    .hide {\n        display: none;\n    }\n\n    button {\n        background-color: #4CAF50;\n        border: none;\n        color: white;\n        padding: 15px 32px;\n        text-align: center;\n        text-decoration: none;\n        display: inline-block;\n        font-size: 16px;\n        margin-top: 20px;\n        cursor: pointer;\n    }\n</style>\n\n    <div class=\"container\">\n        <!-- <button  onclick=\"toggle()\">Masquer/Afficher</button>\n        <p>Cliquez sur le bouton ci-dessous pour masquer/afficher la section :</p> !-->\n        <div id=\"myDiv\">\n            <p><img src = \"http://192.168.1.180/\" width=\"535\" height=\"450\"></p>\n        </div>\n        \n    </div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
@@ -1339,7 +1275,7 @@
         "z": "c85c8003578c92e6",
         "name": "",
         "group": "702ab0b5f76bbe7a",
-        "order": 6,
+        "order": 8,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -1826,7 +1762,7 @@
         "bytopic": "all",
         "topic": "topic",
         "outputs": 2,
-        "x": 960,
+        "x": 1000,
         "y": 380,
         "wires": [
             [],
@@ -1854,7 +1790,7 @@
         "topic": "",
         "payload": "15",
         "payloadType": "num",
-        "x": 710,
+        "x": 770,
         "y": 380,
         "wires": [
             [
@@ -1965,6 +1901,237 @@
         ]
     },
     {
+        "id": "143d5a2cd668c066",
+        "type": "link in",
+        "z": "c85c8003578c92e6",
+        "name": "Alexa In",
+        "links": [
+            "817f09dd9d9a240d"
+        ],
+        "x": 125,
+        "y": 160,
+        "wires": [
+            [
+                "3e2ee09aa2f38c25"
+            ]
+        ]
+    },
+    {
+        "id": "71a97de79675cc6e",
+        "type": "alexa-home",
+        "z": "b389d227e32c6bfb",
+        "conf": "39646c7808ac168e",
+        "device": "197111",
+        "acknoledge": true,
+        "name": "Doorbell",
+        "topic": "",
+        "x": 220,
+        "y": 220,
+        "wires": [
+            [
+                "d3bf002f69e1e301",
+                "e75263589fa433ec"
+            ]
+        ]
+    },
+    {
+        "id": "4a0be078265e6d71",
+        "type": "alexa-home",
+        "z": "b389d227e32c6bfb",
+        "conf": "39646c7808ac168e",
+        "device": "197117",
+        "acknoledge": true,
+        "name": "Ring",
+        "topic": "",
+        "x": 210,
+        "y": 400,
+        "wires": [
+            [
+                "d3bf002f69e1e301",
+                "e75263589fa433ec"
+            ]
+        ]
+    },
+    {
+        "id": "dc10b74bc4d821d7",
+        "type": "alexa-home",
+        "z": "b389d227e32c6bfb",
+        "conf": "39646c7808ac168e",
+        "device": "197115",
+        "acknoledge": true,
+        "name": "Ring Alerts",
+        "topic": "",
+        "x": 220,
+        "y": 280,
+        "wires": [
+            [
+                "d3bf002f69e1e301",
+                "e75263589fa433ec"
+            ]
+        ]
+    },
+    {
+        "id": "a3eca235ef1c6eed",
+        "type": "alexa-home",
+        "z": "b389d227e32c6bfb",
+        "conf": "39646c7808ac168e",
+        "device": "197116",
+        "acknoledge": true,
+        "name": "Door Motion Alert",
+        "topic": "",
+        "x": 240,
+        "y": 340,
+        "wires": [
+            [
+                "d3bf002f69e1e301",
+                "e75263589fa433ec"
+            ]
+        ]
+    },
+    {
+        "id": "d3bf002f69e1e301",
+        "type": "debug",
+        "z": "b389d227e32c6bfb",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "817f09dd9d9a240d",
+        "type": "link out",
+        "z": "b389d227e32c6bfb",
+        "name": "Alexa Out",
+        "mode": "link",
+        "links": [
+            "143d5a2cd668c066"
+        ],
+        "x": 735,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e75263589fa433ec",
+        "type": "function",
+        "z": "b389d227e32c6bfb",
+        "name": "function 5",
+        "func": "if(msg.name == \"Doorbell\"){\n    msg.payload = (msg.payload) ? \"door_on\" : \"door_off\";\n}\nif (msg.name == \"Ring Alerts\") {\n    msg.payload = (msg.payload) ? \"email_on\" : \"email_off\";\n}\nif (msg.name == \"Ring\") {\n    msg.payload = (msg.payload) ? \"ring_on\" : \"ring_off\";\n}\nif (msg.name == \"Door Motion Alert\") {\n    msg.payload = (msg.payload) ? \"motion_on\" : \"motion_off\";\n}\n\n\nreturn msg;",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 300,
+        "wires": [
+            [
+                "817f09dd9d9a240d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "19fc720150eaee30",
+        "type": "alexa-remote-init",
+        "z": "b389d227e32c6bfb",
+        "name": "Init",
+        "account": "b005df8d504ca366",
+        "option": "initialise",
+        "x": 230,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b926b62960dbb2b4",
+        "type": "alexa-remote-event",
+        "z": "b389d227e32c6bfb",
+        "name": "",
+        "account": "b005df8d504ca366",
+        "event": "ws-device-activity",
+        "x": 270,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "afbfb654229a142b",
+        "type": "alexa-remote-smarthome",
+        "z": "b389d227e32c6bfb",
+        "name": "",
+        "account": "b005df8d504ca366",
+        "config": {
+            "option": "action",
+            "value": [
+                {
+                    "entity": "0136a504-fa42-4de9-a32a-be3934799e73",
+                    "action": "turnOff"
+                }
+            ]
+        },
+        "outputs": 1,
+        "x": 280,
+        "y": 620,
+        "wires": [
+            [
+                "fd7bc8829062984d",
+                "0a81a056083a295a"
+            ]
+        ]
+    },
+    {
+        "id": "fd7bc8829062984d",
+        "type": "alexa-remote-routine",
+        "z": "b389d227e32c6bfb",
+        "name": "",
+        "account": "b005df8d504ca366",
+        "routineNode": {
+            "type": "speak",
+            "payload": {
+                "type": "ssml",
+                "text": {
+                    "type": "ssml",
+                    "value": "Porte fermée"
+                },
+                "devices": [
+                    "G090XG1002051K9A"
+                ]
+            }
+        },
+        "x": 600,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a81a056083a295a",
+        "type": "debug",
+        "z": "b389d227e32c6bfb",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 520,
+        "wires": []
+    },
+    {
         "id": "5603406bd3825e58",
         "type": "link in",
         "z": "3468f95594a76fb5",
@@ -1989,8 +2156,8 @@
         "group": "9e88d242ff60dbeb",
         "name": "Log",
         "order": 2,
-        "width": "10",
-        "height": "8",
+        "width": 10,
+        "height": 8,
         "columns": [
             {
                 "field": "action_name",
@@ -2005,7 +2172,7 @@
             {
                 "field": "date_action",
                 "title": "Date",
-                "width": "",
+                "width": "35%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -2015,7 +2182,7 @@
             {
                 "field": "auteur_action",
                 "title": "Author",
-                "width": "20%",
+                "width": "15%",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -2371,101 +2538,5 @@
                 "a83600909d61c828"
             ]
         ]
-    },
-    {
-        "id": "71a97de79675cc6e",
-        "type": "alexa-home",
-        "z": "b389d227e32c6bfb",
-        "conf": "39646c7808ac168e",
-        "device": "197111",
-        "acknoledge": true,
-        "name": "Doorbell",
-        "topic": "",
-        "x": 220,
-        "y": 220,
-        "wires": [
-            [
-                "d3bf002f69e1e301"
-            ]
-        ]
-    },
-    {
-        "id": "4a0be078265e6d71",
-        "type": "alexa-home",
-        "z": "b389d227e32c6bfb",
-        "conf": "39646c7808ac168e",
-        "device": "197117",
-        "acknoledge": true,
-        "name": "Ring",
-        "topic": "",
-        "x": 210,
-        "y": 400,
-        "wires": [
-            [
-                "d3bf002f69e1e301"
-            ]
-        ]
-    },
-    {
-        "id": "dc10b74bc4d821d7",
-        "type": "alexa-home",
-        "z": "b389d227e32c6bfb",
-        "conf": "39646c7808ac168e",
-        "device": "197115",
-        "acknoledge": true,
-        "name": "Ring Alerts",
-        "topic": "",
-        "x": 220,
-        "y": 280,
-        "wires": [
-            [
-                "d3bf002f69e1e301"
-            ]
-        ]
-    },
-    {
-        "id": "a3eca235ef1c6eed",
-        "type": "alexa-home",
-        "z": "b389d227e32c6bfb",
-        "conf": "39646c7808ac168e",
-        "device": "197116",
-        "acknoledge": true,
-        "name": "Door Motion Alert",
-        "topic": "",
-        "x": 240,
-        "y": 340,
-        "wires": [
-            [
-                "d3bf002f69e1e301"
-            ]
-        ]
-    },
-    {
-        "id": "d3bf002f69e1e301",
-        "type": "debug",
-        "z": "b389d227e32c6bfb",
-        "name": "debug 8",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 560,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "817f09dd9d9a240d",
-        "type": "link out",
-        "z": "b389d227e32c6bfb",
-        "name": "Alexa Out",
-        "mode": "link",
-        "links": [],
-        "x": 765,
-        "y": 180,
-        "wires": []
     }
 ]
