@@ -384,41 +384,11 @@
         "username": "francknk"
     },
     {
-        "id": "73a14bf1473fbdb9",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "30fe2fdb15b54ae3",
-        "order": 3,
-        "width": 6,
-        "height": 1
-    },
-    {
-        "id": "65b4562c7bef0385",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "702ab0b5f76bbe7a",
-        "order": 7,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "b51e46c578e6effc",
-        "type": "ui_spacer",
-        "z": "c85c8003578c92e6",
-        "name": "spacer",
-        "group": "702ab0b5f76bbe7a",
-        "order": 9,
-        "width": 1,
-        "height": 1
-    },
-    {
         "id": "b005df8d504ca366",
         "type": "alexa-remote-account",
         "name": "Franck Account",
         "authMethod": "proxy",
-        "proxyOwnIp": "192.168.2.75",
+        "proxyOwnIp": "192.168.137.100",
         "proxyPort": "3456",
         "cookieFile": "",
         "refreshInterval": "10",
@@ -428,6 +398,26 @@
         "userAgent": "",
         "useWsMqtt": "on",
         "autoInit": "on"
+    },
+    {
+        "id": "e5016a089bfe3930",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "702ab0b5f76bbe7a",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ef18cf47b6b418fb",
+        "type": "ui_spacer",
+        "z": "c85c8003578c92e6",
+        "name": "spacer",
+        "group": "702ab0b5f76bbe7a",
+        "order": 9,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "2560e2c03f783384",
@@ -485,8 +475,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 810,
-        "y": 260,
+        "x": 970,
+        "y": 100,
         "wires": [
             [
                 "e42398aa0311a569"
@@ -535,7 +525,7 @@
         "z": "c85c8003578c92e6",
         "name": "",
         "group": "30fe2fdb15b54ae3",
-        "order": 2,
+        "order": 3,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -564,7 +554,7 @@
         "z": "c85c8003578c92e6",
         "name": "",
         "group": "30fe2fdb15b54ae3",
-        "order": 1,
+        "order": 2,
         "width": 3,
         "height": 1,
         "passthru": false,
@@ -626,8 +616,8 @@
         "z": "c85c8003578c92e6",
         "group": "30fe2fdb15b54ae3",
         "order": 4,
-        "width": 0,
-        "height": 0,
+        "width": 6,
+        "height": "2",
         "name": "",
         "label": "Information ",
         "format": "{{msg.payload}}",
@@ -653,7 +643,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 580,
+        "x": 560,
         "y": 1340,
         "wires": [
             []
@@ -681,7 +671,7 @@
         "z": "c85c8003578c92e6",
         "group": "d8ce519417b5cd60",
         "name": "User Info",
-        "order": 2,
+        "order": 1,
         "width": 6,
         "height": 4,
         "format": "<style>\n    .user-card {\n    border: 1px solid #ccc;\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n    max-width: 400px;\n    }\n    \n    .user-card img {\n    width: 100%;\n    max-width: 200px;\n    margin-bottom: 10px;\n    }\n    \n    .user-card h3 {\n    font-size: 24px;\n    margin: 0 0 10px;\n    }\n    \n    .user-card p {\n    font-size: 16px;\n    line-height: 1.5;\n    margin: 0 0 20px;\n    }\n    \n    .user-card ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    }\n    \n    .user-card ul li {\n    font-size: 16px;\n    line-height: 1.5;\n    margin-bottom: 5px;\n    }\n    \n    .user-card ul li strong {\n    font-weight: bold;\n    margin-right: 5px;\n    }\n</style>\n<script>\n    (function(scope) {\n    scope.$watch('msg', function(msg) {\n    if (msg) {\n      // Do something when msg arrives\n      var date = msg.payload.register_date.split('T');\n      msg.payload.register_date = date[1].substring(0,8)  + \" le \" + date[0];\n\n    }\n  });\n})(scope);\n</script>\n\n<div class=\"user-card\">\n    <h3 class=\"user-name\">{{msg.payload.name}}</h3>\n    <ul class=\"user-details\">\n        <li><strong>Email : </strong> {{msg.payload.email}}</li>\n        <li><strong>Reg_date : </strong> {{msg.payload.register_date}}</li>\n    </ul>\n</div>",
@@ -738,7 +728,7 @@
         "name": "",
         "label": "Update name and email",
         "group": "d8ce519417b5cd60",
-        "order": 1,
+        "order": 2,
         "width": 6,
         "height": 1,
         "options": [
@@ -830,8 +820,8 @@
         "confignode": "bfaadd0a56cbec3d",
         "name": "Remot device",
         "verbose": 0,
-        "x": 930,
-        "y": 1180,
+        "x": 810,
+        "y": 1280,
         "wires": [
             []
         ]
@@ -955,8 +945,8 @@
         "format": "{{msg.payload}}",
         "layout": "col-center",
         "className": "",
-        "x": 660,
-        "y": 1260,
+        "x": 580,
+        "y": 1280,
         "wires": []
     },
     {
@@ -974,8 +964,8 @@
         "notificationSoundComputed": "payload.sound",
         "notificationSoundComputedType": "msg",
         "output": 1,
-        "x": 970,
-        "y": 1080,
+        "x": 770,
+        "y": 1340,
         "wires": [
             []
         ]
@@ -1497,40 +1487,6 @@
         ]
     },
     {
-        "id": "66ec6b652e729128",
-        "type": "debug",
-        "z": "c85c8003578c92e6",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 1060,
-        "wires": []
-    },
-    {
-        "id": "6a2107f5efda6bdf",
-        "type": "debug",
-        "z": "c85c8003578c92e6",
-        "name": "debug 7",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 1060,
-        "wires": []
-    },
-    {
         "id": "086741b6a3c66c5e",
         "type": "mqtt out",
         "z": "c85c8003578c92e6",
@@ -1913,6 +1869,156 @@
         "wires": [
             [
                 "3e2ee09aa2f38c25"
+            ]
+        ]
+    },
+    {
+        "id": "cb9be7630983b13c",
+        "type": "ui_numeric",
+        "z": "c85c8003578c92e6",
+        "d": true,
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "30fe2fdb15b54ae3",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 580,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b52792931ba4285",
+        "type": "inject",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "NB Empreintes saved",
+        "payload": "10",
+        "payloadType": "str",
+        "x": 370,
+        "y": 1120,
+        "wires": [
+            [
+                "cb9be7630983b13c",
+                "78bb6e707daa96c8",
+                "b57224640384c5ed"
+            ]
+        ]
+    },
+    {
+        "id": "78bb6e707daa96c8",
+        "type": "ui_template",
+        "z": "c85c8003578c92e6",
+        "group": "30fe2fdb15b54ae3",
+        "name": "Fingers number",
+        "order": 1,
+        "width": 6,
+        "height": "3",
+        "format": "<style>\n    .user-card {\n    border: 1px solid #ccc;\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n    max-width: 400px;\n    }\n    \n    .user-card img {\n    width: 100%;\n    max-width: 200px;\n    margin-bottom: 10px;\n    }\n    \n    .user-card h3 {\n    font-size: 24px;\n    margin: 0 0 10px;\n    }\n    \n    .user-card p {\n    font-size: 16px;\n    line-height: 1.5;\n    margin: 0 0 20px;\n    }\n    .user-details {\n    font-size: 20px;\n    }\n    \n    .user-card ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    }\n    \n    .user-card ul li {\n    font-size: 16px;\n    line-height: 1.5;\n    margin-bottom: 5px;\n    }\n    \n    .user-card ul li strong {\n    font-weight: bold;\n    margin-right: 5px;\n    }\n</style>\n\n<div class=\"user-card\">\n    <center><h3 class=\"user-name\">Fingerprints saved</h3></center>\n    <center class=\"user-details\">\n        <strong>{{msg.payload}} </strong> fingers\n    </center>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b57224640384c5ed",
+        "type": "ui_text",
+        "z": "c85c8003578c92e6",
+        "group": "30fe2fdb15b54ae3",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "{{msg.topic}}",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 610,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "a8560845538a5ed6",
+        "type": "mqtt in",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "topic": "fingers/number",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "79fe84cfb68e37d5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 400,
+        "y": 1120,
+        "wires": [
+            [
+                "78bb6e707daa96c8"
+            ]
+        ]
+    },
+    {
+        "id": "40f1d63ec9c0828a",
+        "type": "ui_ui_control",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "events": "all",
+        "x": 760,
+        "y": 280,
+        "wires": [
+            [
+                "6b8a08c5553440b2"
+            ]
+        ]
+    },
+    {
+        "id": "6b8a08c5553440b2",
+        "type": "function",
+        "z": "c85c8003578c92e6",
+        "name": "function 6",
+        "func": "msg.payload = \"Rien pour l'instant\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 280,
+        "wires": [
+            [
+                "e42398aa0311a569"
             ]
         ]
     },
