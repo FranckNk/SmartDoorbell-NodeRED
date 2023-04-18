@@ -816,7 +816,6 @@
         "id": "30f69799dc59b641",
         "type": "remote-access",
         "z": "c85c8003578c92e6",
-        "d": true,
         "confignode": "bfaadd0a56cbec3d",
         "name": "Remot device",
         "verbose": 0,
@@ -953,8 +952,7 @@
         "id": "d13f3804a5237b0c",
         "type": "remote-notification",
         "z": "c85c8003578c92e6",
-        "d": true,
-        "confignode": "",
+        "confignode": "bfaadd0a56cbec3d",
         "name": "",
         "notificationTitle": "payload.title",
         "notificationTitleType": "msg",
@@ -1920,8 +1918,8 @@
         "topic": "NB Empreintes saved",
         "payload": "10",
         "payloadType": "str",
-        "x": 370,
-        "y": 1120,
+        "x": 350,
+        "y": 1080,
         "wires": [
             [
                 "cb9be7630983b13c",
@@ -1964,7 +1962,7 @@
         "format": "{{msg.payload}}",
         "layout": "col-center",
         "className": "",
-        "x": 610,
+        "x": 690,
         "y": 1080,
         "wires": []
     },
@@ -1981,7 +1979,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 400,
+        "x": 380,
         "y": 1120,
         "wires": [
             [
