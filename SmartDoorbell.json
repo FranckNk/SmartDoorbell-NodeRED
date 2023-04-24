@@ -59,6 +59,64 @@
         "sessionExpiry": ""
     },
     {
+        "id": "39646c7808ac168e",
+        "type": "alexa-home-conf",
+        "username": "francknk"
+    },
+    {
+        "id": "b005df8d504ca366",
+        "type": "alexa-remote-account",
+        "name": "Franck Account",
+        "authMethod": "proxy",
+        "proxyOwnIp": "192.168.137.100",
+        "proxyPort": "3456",
+        "cookieFile": "",
+        "refreshInterval": "10",
+        "alexaServiceHost": "alexa.amazon.com",
+        "amazonPage": "amazon.ca",
+        "acceptLanguage": "en-CA",
+        "userAgent": "",
+        "useWsMqtt": "on",
+        "autoInit": "on"
+    },
+    {
+        "id": "c07d094777037409",
+        "type": "postgreSQLConfig",
+        "name": "SmartDoorbell_DB",
+        "host": "localhost",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "SmartDoorbell",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "admin",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "bfaadd0a56cbec3d",
+        "type": "remote-config",
+        "name": "SmartDoorbell UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "15pzq7qia11vcff4pna7hui6sw2xzgfd1ged1906gyl7t4cumh6egbmhh06bx6xv",
+        "server": "nodered03.remote-red.com",
+        "region": "us"
+    },
+    {
         "id": "544be3ea3584d02b",
         "type": "ui_base",
         "theme": {
@@ -156,6 +214,60 @@
         }
     },
     {
+        "id": "49a94d53f452082e",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "25a6749ce5d4e430",
+        "type": "ui_tab",
+        "name": "Settings",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b840f930a6c2e677",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9326f74d2ff7fe25",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2a23d1f375db2f69",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c593288f9e7f98f6",
+        "type": "ui_tab",
+        "name": "LiveCamera",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
         "id": "702ab0b5f76bbe7a",
         "type": "ui_group",
         "name": "Manage Features",
@@ -189,24 +301,6 @@
         "className": ""
     },
     {
-        "id": "49a94d53f452082e",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "dashboard",
-        "order": 6,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "25a6749ce5d4e430",
-        "type": "ui_tab",
-        "name": "Settings",
-        "icon": "dashboard",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "d8ce519417b5cd60",
         "type": "ui_group",
         "name": "Current User",
@@ -216,31 +310,6 @@
         "width": 6,
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "c07d094777037409",
-        "type": "postgreSQLConfig",
-        "name": "SmartDoorbell_DB",
-        "host": "localhost",
-        "hostFieldType": "str",
-        "port": "5432",
-        "portFieldType": "num",
-        "database": "SmartDoorbell",
-        "databaseFieldType": "str",
-        "ssl": "false",
-        "sslFieldType": "bool",
-        "applicationName": "",
-        "applicationNameType": "str",
-        "max": "10",
-        "maxFieldType": "num",
-        "idle": "1000",
-        "idleFieldType": "num",
-        "connectionTimeout": "10000",
-        "connectionTimeoutFieldType": "num",
-        "user": "postgres",
-        "userFieldType": "str",
-        "password": "admin",
-        "passwordFieldType": "str"
     },
     {
         "id": "9ea5b1211ce1f538",
@@ -254,15 +323,6 @@
         "className": ""
     },
     {
-        "id": "b840f930a6c2e677",
-        "type": "ui_tab",
-        "name": "Dashboard",
-        "icon": "dashboard",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "6b800beeb703abcb",
         "type": "ui_group",
         "name": "Table",
@@ -272,24 +332,6 @@
         "width": 20,
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "9326f74d2ff7fe25",
-        "type": "ui_tab",
-        "name": "Dashboard",
-        "icon": "dashboard",
-        "order": 3,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "2a23d1f375db2f69",
-        "type": "ui_tab",
-        "name": "Dashboard",
-        "icon": "dashboard",
-        "order": 4,
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "457443a7ef00c356",
@@ -347,15 +389,6 @@
         "className": ""
     },
     {
-        "id": "c593288f9e7f98f6",
-        "type": "ui_tab",
-        "name": "LiveCamera",
-        "icon": "dashboard",
-        "order": 5,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "9e88d242ff60dbeb",
         "type": "ui_group",
         "name": "Log actions",
@@ -365,39 +398,6 @@
         "width": "10",
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "bfaadd0a56cbec3d",
-        "type": "remote-config",
-        "name": "SmartDoorbell UI",
-        "host": "localhost",
-        "protocol": "http",
-        "port": "1880",
-        "baseurl": "/ui",
-        "instancehash": "15pzq7qia11vcff4pna7hui6sw2xzgfd1ged1906gyl7t4cumh6egbmhh06bx6xv",
-        "server": "nodered03.remote-red.com",
-        "region": "us"
-    },
-    {
-        "id": "39646c7808ac168e",
-        "type": "alexa-home-conf",
-        "username": "francknk"
-    },
-    {
-        "id": "b005df8d504ca366",
-        "type": "alexa-remote-account",
-        "name": "Franck Account",
-        "authMethod": "proxy",
-        "proxyOwnIp": "192.168.137.100",
-        "proxyPort": "3456",
-        "cookieFile": "",
-        "refreshInterval": "10",
-        "alexaServiceHost": "alexa.amazon.com",
-        "amazonPage": "amazon.ca",
-        "acceptLanguage": "en-CA",
-        "userAgent": "",
-        "useWsMqtt": "on",
-        "autoInit": "on"
     },
     {
         "id": "e5016a089bfe3930",
@@ -520,191 +520,6 @@
         "wires": []
     },
     {
-        "id": "858c5444686be692",
-        "type": "ui_button",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "group": "30fe2fdb15b54ae3",
-        "order": 3,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "Scan Finger",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "enroll",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 390,
-        "y": 140,
-        "wires": [
-            [
-                "a16530aed037f62b",
-                "794a2f4abe8d7cf7"
-            ]
-        ]
-    },
-    {
-        "id": "a6c578f2af4e5e66",
-        "type": "ui_button",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "group": "30fe2fdb15b54ae3",
-        "order": 2,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "Delete all fingers",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "clearfinger",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 410,
-        "y": 440,
-        "wires": [
-            [
-                "794a2f4abe8d7cf7"
-            ]
-        ]
-    },
-    {
-        "id": "54908942cee4986f",
-        "type": "ui_switch",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "label": "Ring email alerts",
-        "tooltip": "",
-        "group": "702ab0b5f76bbe7a",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "email_on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "email_off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 410,
-        "y": 380,
-        "wires": [
-            [
-                "794a2f4abe8d7cf7"
-            ]
-        ]
-    },
-    {
-        "id": "e42398aa0311a569",
-        "type": "ui_text",
-        "z": "c85c8003578c92e6",
-        "group": "30fe2fdb15b54ae3",
-        "order": 4,
-        "width": 6,
-        "height": "2",
-        "name": "",
-        "label": "Information ",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 1230,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "9916460a07e22838",
-        "type": "ui_template",
-        "z": "c85c8003578c92e6",
-        "d": true,
-        "group": "d61766583efd1c8e",
-        "name": "",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "format": "<div>\n    <img src = \"http://192.168.1.179\" width=\"500\" height=\"500\"\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 560,
-        "y": 1340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "05a6291fdd8044d1",
-        "type": "postgresql",
-        "z": "c85c8003578c92e6",
-        "name": "Insert User",
-        "query": "insert into my_users (name,email,register_date)\n\nvalues ($1, $2, now())",
-        "postgreSQLConfig": "c07d094777037409",
-        "split": true,
-        "rowsPerMsg": 1,
-        "outputs": 1,
-        "x": 1010,
-        "y": 700,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "909e643485b4e102",
-        "type": "ui_template",
-        "z": "c85c8003578c92e6",
-        "group": "d8ce519417b5cd60",
-        "name": "User Info",
-        "order": 1,
-        "width": 6,
-        "height": 4,
-        "format": "<style>\n    .user-card {\n    border: 1px solid #ccc;\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n    max-width: 400px;\n    }\n    \n    .user-card img {\n    width: 100%;\n    max-width: 200px;\n    margin-bottom: 10px;\n    }\n    \n    .user-card h3 {\n    font-size: 24px;\n    margin: 0 0 10px;\n    }\n    \n    .user-card p {\n    font-size: 16px;\n    line-height: 1.5;\n    margin: 0 0 20px;\n    }\n    \n    .user-card ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    }\n    \n    .user-card ul li {\n    font-size: 16px;\n    line-height: 1.5;\n    margin-bottom: 5px;\n    }\n    \n    .user-card ul li strong {\n    font-weight: bold;\n    margin-right: 5px;\n    }\n</style>\n<script>\n    (function(scope) {\n    scope.$watch('msg', function(msg) {\n    if (msg) {\n      // Do something when msg arrives\n      var date = msg.payload.register_date.split('T');\n      msg.payload.register_date = date[1].substring(0,8)  + \" le \" + date[0];\n\n    }\n  });\n})(scope);\n</script>\n\n<div class=\"user-card\">\n    <h3 class=\"user-name\">{{msg.payload.name}}</h3>\n    <ul class=\"user-details\">\n        <li><strong>Email : </strong> {{msg.payload.email}}</li>\n        <li><strong>Reg_date : </strong> {{msg.payload.register_date}}</li>\n    </ul>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 1220,
-        "y": 640,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "df4a802d8970dbcf",
-        "type": "postgresql",
-        "z": "c85c8003578c92e6",
-        "name": "Get User",
-        "query": "SELECT * FROM my_users;",
-        "postgreSQLConfig": "c07d094777037409",
-        "split": true,
-        "rowsPerMsg": 1,
-        "outputs": 1,
-        "x": 1000,
-        "y": 640,
-        "wires": [
-            [
-                "909e643485b4e102"
-            ]
-        ]
-    },
-    {
         "id": "3a3aa81223359edb",
         "type": "debug",
         "z": "c85c8003578c92e6",
@@ -720,52 +535,6 @@
         "x": 1260,
         "y": 380,
         "wires": []
-    },
-    {
-        "id": "ef43d4f2fbb59818",
-        "type": "ui_form",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "label": "Update name and email",
-        "group": "d8ce519417b5cd60",
-        "order": 2,
-        "width": 6,
-        "height": 1,
-        "options": [
-            {
-                "label": "Name",
-                "value": "name",
-                "type": "text",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Email",
-                "value": "email",
-                "type": "email",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "name": "",
-            "email": ""
-        },
-        "payload": "",
-        "submit": "Submit",
-        "cancel": "Cancel",
-        "topic": "topic",
-        "topicType": "msg",
-        "splitLayout": "",
-        "className": "",
-        "x": 430,
-        "y": 620,
-        "wires": [
-            [
-                "c87c7da2c019e1e9",
-                "f343a0e56d0cae3e"
-            ]
-        ]
     },
     {
         "id": "c87c7da2c019e1e9",
@@ -813,19 +582,6 @@
         ]
     },
     {
-        "id": "30f69799dc59b641",
-        "type": "remote-access",
-        "z": "c85c8003578c92e6",
-        "confignode": "bfaadd0a56cbec3d",
-        "name": "Remot device",
-        "verbose": 0,
-        "x": 870,
-        "y": 1220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f343a0e56d0cae3e",
         "type": "delay",
         "z": "c85c8003578c92e6",
@@ -851,20 +607,6 @@
         ]
     },
     {
-        "id": "1249240f9daf6dfb",
-        "type": "e-mail",
-        "z": "c85c8003578c92e6",
-        "server": "smtp.gmail.com",
-        "port": "465",
-        "secure": true,
-        "tls": true,
-        "name": "",
-        "dname": "",
-        "x": 1210,
-        "y": 580,
-        "wires": []
-    },
-    {
         "id": "46917b4a6e1c9346",
         "type": "inject",
         "z": "c85c8003578c92e6",
@@ -886,20 +628,6 @@
         "wires": [
             [
                 "a683b716ea1eec73"
-            ]
-        ]
-    },
-    {
-        "id": "a47a7f054cab6a1c",
-        "type": "ui_ui_control",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "events": "connect",
-        "x": 380,
-        "y": 700,
-        "wires": [
-            [
-                "f343a0e56d0cae3e"
             ]
         ]
     },
@@ -931,78 +659,6 @@
         ]
     },
     {
-        "id": "8928af3bdc5aa467",
-        "type": "ui_text",
-        "z": "c85c8003578c92e6",
-        "d": true,
-        "group": "702ab0b5f76bbe7a",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "SocketIp",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 580,
-        "y": 1280,
-        "wires": []
-    },
-    {
-        "id": "d13f3804a5237b0c",
-        "type": "remote-notification",
-        "z": "c85c8003578c92e6",
-        "confignode": "bfaadd0a56cbec3d",
-        "name": "",
-        "notificationTitle": "payload.title",
-        "notificationTitleType": "msg",
-        "notificationBody": "payload.body",
-        "notificationBodyType": "msg",
-        "notificationSound": "default",
-        "notificationSoundComputed": "payload.sound",
-        "notificationSoundComputedType": "msg",
-        "output": 1,
-        "x": 770,
-        "y": 1340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a317a256d2574a51",
-        "type": "ui_switch",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "label": "Motion email alerts",
-        "tooltip": "",
-        "group": "702ab0b5f76bbe7a",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "motion_on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "motion_off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 410,
-        "y": 260,
-        "wires": [
-            [
-                "794a2f4abe8d7cf7"
-            ]
-        ]
-    },
-    {
         "id": "794a2f4abe8d7cf7",
         "type": "function",
         "z": "c85c8003578c92e6",
@@ -1023,29 +679,6 @@
         ]
     },
     {
-        "id": "3e8f832adb9e22cc",
-        "type": "ui_template",
-        "z": "c85c8003578c92e6",
-        "group": "124fd84eaf0f984d",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "\n\n<style>\n\n    .container {\n        display: block;\n        background-color: #f2f2f2;\n        border: 1px solid #ccc;\n        padding: 20px;\n    }\n    button:hover {\n    background-color: #3e8e41;\n    }\n\n    button:active {\n    background-color: #3e8e41;\n    box-shadow: 0 2px #666;\n    transform: translateY(2px);\n    }\n    .hide {\n        display: none;\n    }\n\n    button {\n        background-color: #4CAF50;\n        border: none;\n        color: white;\n        padding: 15px 32px;\n        text-align: center;\n        text-decoration: none;\n        display: inline-block;\n        font-size: 16px;\n        margin-top: 20px;\n        cursor: pointer;\n    }\n</style>\n\n    <div class=\"container\">\n        <!-- <button  onclick=\"toggle()\">Masquer/Afficher</button>\n        <p>Cliquez sur le bouton ci-dessous pour masquer/afficher la section :</p> !-->\n        <div id=\"myDiv\">\n            <p><img src = \"http://192.168.1.180/\" width=\"535\" height=\"450\"></p>\n        </div>\n        \n    </div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 680,
-        "y": 20,
-        "wires": [
-            [
-                "09c5cc4156a3bb2c"
-            ]
-        ]
-    },
-    {
         "id": "6e29599bd3c4f2ce",
         "type": "function",
         "z": "c85c8003578c92e6",
@@ -1061,34 +694,6 @@
         "wires": [
             [
                 "90a3269c37501ea2"
-            ]
-        ]
-    },
-    {
-        "id": "531b23be4938470d",
-        "type": "ui_button",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "group": "124fd84eaf0f984d",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Back to Home",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 400,
-        "y": 80,
-        "wires": [
-            [
-                "bde0ab41f4a3acd5"
             ]
         ]
     },
@@ -1120,18 +725,6 @@
         ]
     },
     {
-        "id": "c0853e3b31a3a2dc",
-        "type": "ui_ui_control",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "events": "all",
-        "x": 1220,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "09c5cc4156a3bb2c",
         "type": "change",
         "z": "c85c8003578c92e6",
@@ -1159,46 +752,6 @@
         ]
     },
     {
-        "id": "df2a0c6fc94f44e3",
-        "type": "ui_ui_control",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "events": "all",
-        "x": 1220,
-        "y": 20,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2724322f130debba",
-        "type": "ui_button",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "group": "702ab0b5f76bbe7a",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Live Camera",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 390,
-        "y": 20,
-        "wires": [
-            [
-                "3e8f832adb9e22cc"
-            ]
-        ]
-    },
-    {
         "id": "ae63001b0d02c085",
         "type": "mqtt in",
         "z": "c85c8003578c92e6",
@@ -1220,72 +773,6 @@
         ]
     },
     {
-        "id": "3a618e78fe984bf5",
-        "type": "postgresql",
-        "z": "c85c8003578c92e6",
-        "name": "Email from DB",
-        "query": "SELECT email FROM my_users;",
-        "postgreSQLConfig": "c07d094777037409",
-        "split": true,
-        "rowsPerMsg": 1,
-        "outputs": 1,
-        "x": 700,
-        "y": 560,
-        "wires": [
-            [
-                "6e29599bd3c4f2ce",
-                "37617617d0b0da6f"
-            ]
-        ]
-    },
-    {
-        "id": "90a3269c37501ea2",
-        "type": "ui_toast",
-        "z": "c85c8003578c92e6",
-        "position": "top right",
-        "displayTime": "3",
-        "highlight": "blue",
-        "sendall": true,
-        "outputs": 0,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "",
-        "x": 1250,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "c39dbb7651a5de89",
-        "type": "ui_button",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "group": "702ab0b5f76bbe7a",
-        "order": 8,
-        "width": 3,
-        "height": 1,
-        "passthru": false,
-        "label": "Test email",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "enroll",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 380,
-        "y": 560,
-        "wires": [
-            [
-                "3a618e78fe984bf5"
-            ]
-        ]
-    },
-    {
         "id": "2db8770afee653f3",
         "type": "link out",
         "z": "c85c8003578c92e6",
@@ -1297,40 +784,6 @@
         "x": 905,
         "y": 180,
         "wires": []
-    },
-    {
-        "id": "49140de42ac47116",
-        "type": "ui_switch",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "label": "Door opened",
-        "tooltip": "",
-        "group": "702ab0b5f76bbe7a",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "door_on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "door_off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 390,
-        "y": 200,
-        "wires": [
-            [
-                "794a2f4abe8d7cf7"
-            ]
-        ]
     },
     {
         "id": "c934634964ee12e1",
@@ -1451,40 +904,6 @@
         "wires": []
     },
     {
-        "id": "7c26bac27140712f",
-        "type": "ui_switch",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "label": "Ring song alerts",
-        "tooltip": "",
-        "group": "702ab0b5f76bbe7a",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "onvalue": "ring_on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "ring_off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "animate": false,
-        "className": "",
-        "x": 400,
-        "y": 320,
-        "wires": [
-            [
-                "794a2f4abe8d7cf7"
-            ]
-        ]
-    },
-    {
         "id": "086741b6a3c66c5e",
         "type": "mqtt out",
         "z": "c85c8003578c92e6",
@@ -1568,56 +987,6 @@
         ]
     },
     {
-        "id": "a9c947ad79f8632c",
-        "type": "postgresql",
-        "z": "c85c8003578c92e6",
-        "name": "Email from DB",
-        "query": "SELECT email FROM my_users;",
-        "postgreSQLConfig": "c07d094777037409",
-        "split": true,
-        "rowsPerMsg": 1,
-        "outputs": 1,
-        "x": 840,
-        "y": 880,
-        "wires": [
-            [
-                "f76cb5d4a49fe9b8"
-            ]
-        ]
-    },
-    {
-        "id": "1b18e39ed7befe11",
-        "type": "e-mail",
-        "z": "c85c8003578c92e6",
-        "server": "smtp.gmail.com",
-        "port": "465",
-        "secure": true,
-        "tls": true,
-        "name": "",
-        "dname": "",
-        "x": 1270,
-        "y": 880,
-        "wires": []
-    },
-    {
-        "id": "bc0fc0dcba23e1ff",
-        "type": "postgresql",
-        "z": "c85c8003578c92e6",
-        "name": "Email from DB",
-        "query": "SELECT email FROM my_users;",
-        "postgreSQLConfig": "c07d094777037409",
-        "split": true,
-        "rowsPerMsg": 1,
-        "outputs": 1,
-        "x": 840,
-        "y": 940,
-        "wires": [
-            [
-                "bebc82161e63d0ff"
-            ]
-        ]
-    },
-    {
         "id": "bebc82161e63d0ff",
         "type": "function",
         "z": "c85c8003578c92e6",
@@ -1635,20 +1004,6 @@
                 "8502c06817694499"
             ]
         ]
-    },
-    {
-        "id": "8502c06817694499",
-        "type": "e-mail",
-        "z": "c85c8003578c92e6",
-        "server": "smtp.gmail.com",
-        "port": "465",
-        "secure": true,
-        "tls": true,
-        "name": "",
-        "dname": "",
-        "x": 1270,
-        "y": 940,
-        "wires": []
     },
     {
         "id": "8de6d25f7a8569e5",
@@ -1871,33 +1226,6 @@
         ]
     },
     {
-        "id": "cb9be7630983b13c",
-        "type": "ui_numeric",
-        "z": "c85c8003578c92e6",
-        "d": true,
-        "name": "",
-        "label": "numeric",
-        "tooltip": "",
-        "group": "30fe2fdb15b54ae3",
-        "order": 5,
-        "width": 6,
-        "height": 1,
-        "wrap": false,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "format": "{{value}}",
-        "min": 0,
-        "max": 10,
-        "step": 1,
-        "className": "",
-        "x": 580,
-        "y": 1180,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "4b52792931ba4285",
         "type": "inject",
         "z": "c85c8003578c92e6",
@@ -1929,44 +1257,6 @@
         ]
     },
     {
-        "id": "78bb6e707daa96c8",
-        "type": "ui_template",
-        "z": "c85c8003578c92e6",
-        "group": "30fe2fdb15b54ae3",
-        "name": "Fingers number",
-        "order": 1,
-        "width": 6,
-        "height": "3",
-        "format": "<style>\n    .user-card {\n    border: 1px solid #ccc;\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n    max-width: 400px;\n    }\n    \n    .user-card img {\n    width: 100%;\n    max-width: 200px;\n    margin-bottom: 10px;\n    }\n    \n    .user-card h3 {\n    font-size: 24px;\n    margin: 0 0 10px;\n    }\n    \n    .user-card p {\n    font-size: 16px;\n    line-height: 1.5;\n    margin: 0 0 20px;\n    }\n    .user-details {\n    font-size: 20px;\n    }\n    \n    .user-card ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    }\n    \n    .user-card ul li {\n    font-size: 16px;\n    line-height: 1.5;\n    margin-bottom: 5px;\n    }\n    \n    .user-card ul li strong {\n    font-weight: bold;\n    margin-right: 5px;\n    }\n</style>\n\n<div class=\"user-card\">\n    <center><h3 class=\"user-name\">Fingerprints saved</h3></center>\n    <center class=\"user-details\">\n        <strong>{{msg.payload}} </strong> fingers\n    </center>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 720,
-        "y": 1120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b57224640384c5ed",
-        "type": "ui_text",
-        "z": "c85c8003578c92e6",
-        "group": "30fe2fdb15b54ae3",
-        "order": 6,
-        "width": 6,
-        "height": 1,
-        "name": "",
-        "label": "{{msg.topic}}",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "className": "",
-        "x": 690,
-        "y": 1080,
-        "wires": []
-    },
-    {
         "id": "a8560845538a5ed6",
         "type": "mqtt in",
         "z": "c85c8003578c92e6",
@@ -1984,20 +1274,6 @@
         "wires": [
             [
                 "78bb6e707daa96c8"
-            ]
-        ]
-    },
-    {
-        "id": "40f1d63ec9c0828a",
-        "type": "ui_ui_control",
-        "z": "c85c8003578c92e6",
-        "name": "",
-        "events": "all",
-        "x": 760,
-        "y": 280,
-        "wires": [
-            [
-                "6b8a08c5553440b2"
             ]
         ]
     },
@@ -2091,15 +1367,806 @@
         "wires": []
     },
     {
+        "id": "05a6291fdd8044d1",
+        "type": "postgresql",
+        "z": "c85c8003578c92e6",
+        "name": "Insert User",
+        "query": "insert into my_users (name,email,register_date)\n\nvalues ($1, $2, now())",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1010,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df4a802d8970dbcf",
+        "type": "postgresql",
+        "z": "c85c8003578c92e6",
+        "name": "Get User",
+        "query": "SELECT * FROM my_users;",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1000,
+        "y": 640,
+        "wires": [
+            [
+                "909e643485b4e102"
+            ]
+        ]
+    },
+    {
+        "id": "3a618e78fe984bf5",
+        "type": "postgresql",
+        "z": "c85c8003578c92e6",
+        "name": "Email from DB",
+        "query": "SELECT email FROM my_users;",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 700,
+        "y": 560,
+        "wires": [
+            [
+                "6e29599bd3c4f2ce",
+                "37617617d0b0da6f"
+            ]
+        ]
+    },
+    {
+        "id": "a9c947ad79f8632c",
+        "type": "postgresql",
+        "z": "c85c8003578c92e6",
+        "name": "Email from DB",
+        "query": "SELECT email FROM my_users;",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 840,
+        "y": 880,
+        "wires": [
+            [
+                "f76cb5d4a49fe9b8"
+            ]
+        ]
+    },
+    {
+        "id": "bc0fc0dcba23e1ff",
+        "type": "postgresql",
+        "z": "c85c8003578c92e6",
+        "name": "Email from DB",
+        "query": "SELECT email FROM my_users;",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 840,
+        "y": 940,
+        "wires": [
+            [
+                "bebc82161e63d0ff"
+            ]
+        ]
+    },
+    {
+        "id": "30f69799dc59b641",
+        "type": "remote-access",
+        "z": "c85c8003578c92e6",
+        "confignode": "bfaadd0a56cbec3d",
+        "name": "Remot device",
+        "verbose": 0,
+        "x": 870,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d13f3804a5237b0c",
+        "type": "remote-notification",
+        "z": "c85c8003578c92e6",
+        "confignode": "bfaadd0a56cbec3d",
+        "name": "",
+        "notificationTitle": "payload.title",
+        "notificationTitleType": "msg",
+        "notificationBody": "payload.body",
+        "notificationBodyType": "msg",
+        "notificationSound": "default",
+        "notificationSoundComputed": "payload.sound",
+        "notificationSoundComputedType": "msg",
+        "output": 1,
+        "x": 770,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "858c5444686be692",
+        "type": "ui_button",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "group": "30fe2fdb15b54ae3",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Scan Finger",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "enroll",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "a16530aed037f62b",
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "a6c578f2af4e5e66",
+        "type": "ui_button",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "group": "30fe2fdb15b54ae3",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Delete all fingers",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "clearfinger",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "531b23be4938470d",
+        "type": "ui_button",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "group": "124fd84eaf0f984d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Back to Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 400,
+        "y": 80,
+        "wires": [
+            [
+                "bde0ab41f4a3acd5"
+            ]
+        ]
+    },
+    {
+        "id": "2724322f130debba",
+        "type": "ui_button",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Live Camera",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 20,
+        "wires": [
+            [
+                "3e8f832adb9e22cc"
+            ]
+        ]
+    },
+    {
+        "id": "c39dbb7651a5de89",
+        "type": "ui_button",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 8,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Test email",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "enroll",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 380,
+        "y": 560,
+        "wires": [
+            [
+                "3a618e78fe984bf5"
+            ]
+        ]
+    },
+    {
+        "id": "54908942cee4986f",
+        "type": "ui_switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "label": "Ring email alerts",
+        "tooltip": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "email_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "email_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 380,
+        "wires": [
+            [
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "a317a256d2574a51",
+        "type": "ui_switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "label": "Motion email alerts",
+        "tooltip": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "motion_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "motion_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 260,
+        "wires": [
+            [
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "49140de42ac47116",
+        "type": "ui_switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "label": "Door opened",
+        "tooltip": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "door_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "door_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 390,
+        "y": 200,
+        "wires": [
+            [
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "7c26bac27140712f",
+        "type": "ui_switch",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "label": "Ring song alerts",
+        "tooltip": "",
+        "group": "702ab0b5f76bbe7a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ring_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "ring_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 400,
+        "y": 320,
+        "wires": [
+            [
+                "794a2f4abe8d7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "cb9be7630983b13c",
+        "type": "ui_numeric",
+        "z": "c85c8003578c92e6",
+        "d": true,
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "30fe2fdb15b54ae3",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 580,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef43d4f2fbb59818",
+        "type": "ui_form",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "label": "Update name and email",
+        "group": "d8ce519417b5cd60",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Name",
+                "value": "name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "name": "",
+            "email": ""
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 430,
+        "y": 620,
+        "wires": [
+            [
+                "c87c7da2c019e1e9",
+                "f343a0e56d0cae3e"
+            ]
+        ]
+    },
+    {
+        "id": "e42398aa0311a569",
+        "type": "ui_text",
+        "z": "c85c8003578c92e6",
+        "group": "30fe2fdb15b54ae3",
+        "order": 4,
+        "width": 6,
+        "height": "2",
+        "name": "",
+        "label": "Information ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1230,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8928af3bdc5aa467",
+        "type": "ui_text",
+        "z": "c85c8003578c92e6",
+        "d": true,
+        "group": "702ab0b5f76bbe7a",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SocketIp",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 580,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "b57224640384c5ed",
+        "type": "ui_text",
+        "z": "c85c8003578c92e6",
+        "group": "30fe2fdb15b54ae3",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "{{msg.topic}}",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 690,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "90a3269c37501ea2",
+        "type": "ui_toast",
+        "z": "c85c8003578c92e6",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "blue",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1250,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "a47a7f054cab6a1c",
+        "type": "ui_ui_control",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "events": "connect",
+        "x": 380,
+        "y": 700,
+        "wires": [
+            [
+                "f343a0e56d0cae3e"
+            ]
+        ]
+    },
+    {
+        "id": "c0853e3b31a3a2dc",
+        "type": "ui_ui_control",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "events": "all",
+        "x": 1220,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df2a0c6fc94f44e3",
+        "type": "ui_ui_control",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "events": "all",
+        "x": 1220,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40f1d63ec9c0828a",
+        "type": "ui_ui_control",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "events": "all",
+        "x": 760,
+        "y": 280,
+        "wires": [
+            [
+                "6b8a08c5553440b2"
+            ]
+        ]
+    },
+    {
+        "id": "9916460a07e22838",
+        "type": "ui_template",
+        "z": "c85c8003578c92e6",
+        "d": true,
+        "group": "d61766583efd1c8e",
+        "name": "",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "format": "<div>\n    <img src = \"http://192.168.1.179\" width=\"500\" height=\"500\"\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 560,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "909e643485b4e102",
+        "type": "ui_template",
+        "z": "c85c8003578c92e6",
+        "group": "d8ce519417b5cd60",
+        "name": "User Info",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "format": "<style>\n    .user-card {\n    border: 1px solid #ccc;\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n    max-width: 400px;\n    }\n    \n    .user-card img {\n    width: 100%;\n    max-width: 200px;\n    margin-bottom: 10px;\n    }\n    \n    .user-card h3 {\n    font-size: 24px;\n    margin: 0 0 10px;\n    }\n    \n    .user-card p {\n    font-size: 16px;\n    line-height: 1.5;\n    margin: 0 0 20px;\n    }\n    \n    .user-card ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    }\n    \n    .user-card ul li {\n    font-size: 16px;\n    line-height: 1.5;\n    margin-bottom: 5px;\n    }\n    \n    .user-card ul li strong {\n    font-weight: bold;\n    margin-right: 5px;\n    }\n</style>\n<script>\n    (function(scope) {\n    scope.$watch('msg', function(msg) {\n    if (msg) {\n      // Do something when msg arrives\n      var date = msg.payload.register_date.split('T');\n      msg.payload.register_date = date[1].substring(0,8)  + \" le \" + date[0];\n\n    }\n  });\n})(scope);\n</script>\n\n<div class=\"user-card\">\n    <h3 class=\"user-name\">{{msg.payload.name}}</h3>\n    <ul class=\"user-details\">\n        <li><strong>Email : </strong> {{msg.payload.email}}</li>\n        <li><strong>Reg_date : </strong> {{msg.payload.register_date}}</li>\n    </ul>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1220,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e8f832adb9e22cc",
+        "type": "ui_template",
+        "z": "c85c8003578c92e6",
+        "group": "124fd84eaf0f984d",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "\n\n<style>\n\n    .container {\n        display: block;\n        background-color: #f2f2f2;\n        border: 1px solid #ccc;\n        padding: 20px;\n    }\n    button:hover {\n    background-color: #3e8e41;\n    }\n\n    button:active {\n    background-color: #3e8e41;\n    box-shadow: 0 2px #666;\n    transform: translateY(2px);\n    }\n    .hide {\n        display: none;\n    }\n\n    button {\n        background-color: #4CAF50;\n        border: none;\n        color: white;\n        padding: 15px 32px;\n        text-align: center;\n        text-decoration: none;\n        display: inline-block;\n        font-size: 16px;\n        margin-top: 20px;\n        cursor: pointer;\n    }\n</style>\n\n    <div class=\"container\">\n        <!-- <button  onclick=\"toggle()\">Masquer/Afficher</button>\n        <p>Cliquez sur le bouton ci-dessous pour masquer/afficher la section :</p> !-->\n        <div id=\"myDiv\">\n            <p><img src = \"http://192.168.1.180/\" width=\"535\" height=\"450\"></p>\n        </div>\n        \n    </div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 680,
+        "y": 20,
+        "wires": [
+            [
+                "09c5cc4156a3bb2c"
+            ]
+        ]
+    },
+    {
+        "id": "78bb6e707daa96c8",
+        "type": "ui_template",
+        "z": "c85c8003578c92e6",
+        "group": "30fe2fdb15b54ae3",
+        "name": "Fingers number",
+        "order": 1,
+        "width": 6,
+        "height": "3",
+        "format": "<style>\n    .user-card {\n    border: 1px solid #ccc;\n    padding: 20px;\n    border-radius: 5px;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n    max-width: 400px;\n    }\n    \n    .user-card img {\n    width: 100%;\n    max-width: 200px;\n    margin-bottom: 10px;\n    }\n    \n    .user-card h3 {\n    font-size: 24px;\n    margin: 0 0 10px;\n    }\n    \n    .user-card p {\n    font-size: 16px;\n    line-height: 1.5;\n    margin: 0 0 20px;\n    }\n    .user-details {\n    font-size: 20px;\n    }\n    \n    .user-card ul {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    }\n    \n    .user-card ul li {\n    font-size: 16px;\n    line-height: 1.5;\n    margin-bottom: 5px;\n    }\n    \n    .user-card ul li strong {\n    font-weight: bold;\n    margin-right: 5px;\n    }\n</style>\n\n<div class=\"user-card\">\n    <center><h3 class=\"user-name\">Fingerprints saved</h3></center>\n    <center class=\"user-details\">\n        <strong>{{msg.payload}} </strong> fingers\n    </center>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 720,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1249240f9daf6dfb",
+        "type": "e-mail",
+        "z": "c85c8003578c92e6",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 1210,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "1b18e39ed7befe11",
+        "type": "e-mail",
+        "z": "c85c8003578c92e6",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 1270,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "8502c06817694499",
+        "type": "e-mail",
+        "z": "c85c8003578c92e6",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 1270,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "d3bf002f69e1e301",
+        "type": "debug",
+        "z": "b389d227e32c6bfb",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "817f09dd9d9a240d",
+        "type": "link out",
+        "z": "b389d227e32c6bfb",
+        "name": "Alexa Out",
+        "mode": "link",
+        "links": [
+            "143d5a2cd668c066"
+        ],
+        "x": 735,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e75263589fa433ec",
+        "type": "function",
+        "z": "b389d227e32c6bfb",
+        "name": "function 5",
+        "func": "if(msg.name == \"Doorbell\"){\n    msg.payload = (msg.payload) ? \"door_on\" : \"door_off\";\n}\nif (msg.name == \"Ring Alerts\") {\n    msg.payload = (msg.payload) ? \"email_on\" : \"email_off\";\n}\nif (msg.name == \"Ring\") {\n    msg.payload = (msg.payload) ? \"ring_on\" : \"ring_off\";\n}\nif (msg.name == \"Door Motion Alert\") {\n    msg.payload = (msg.payload) ? \"motion_on\" : \"motion_off\";\n}\n\n\nreturn msg;",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 300,
+        "wires": [
+            [
+                "817f09dd9d9a240d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "0a81a056083a295a",
+        "type": "debug",
+        "z": "b389d227e32c6bfb",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 520,
+        "wires": []
+    },
+    {
         "id": "71a97de79675cc6e",
         "type": "alexa-home",
         "z": "b389d227e32c6bfb",
         "conf": "39646c7808ac168e",
         "device": "197111",
         "acknoledge": true,
-        "name": "Doorbell",
+        "name": "",
         "topic": "",
-        "x": 220,
+        "x": 230,
         "y": 220,
         "wires": [
             [
@@ -2160,56 +2227,6 @@
                 "d3bf002f69e1e301",
                 "e75263589fa433ec"
             ]
-        ]
-    },
-    {
-        "id": "d3bf002f69e1e301",
-        "type": "debug",
-        "z": "b389d227e32c6bfb",
-        "name": "debug 8",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "817f09dd9d9a240d",
-        "type": "link out",
-        "z": "b389d227e32c6bfb",
-        "name": "Alexa Out",
-        "mode": "link",
-        "links": [
-            "143d5a2cd668c066"
-        ],
-        "x": 735,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "e75263589fa433ec",
-        "type": "function",
-        "z": "b389d227e32c6bfb",
-        "name": "function 5",
-        "func": "if(msg.name == \"Doorbell\"){\n    msg.payload = (msg.payload) ? \"door_on\" : \"door_off\";\n}\nif (msg.name == \"Ring Alerts\") {\n    msg.payload = (msg.payload) ? \"email_on\" : \"email_off\";\n}\nif (msg.name == \"Ring\") {\n    msg.payload = (msg.payload) ? \"ring_on\" : \"ring_off\";\n}\nif (msg.name == \"Door Motion Alert\") {\n    msg.payload = (msg.payload) ? \"motion_on\" : \"motion_off\";\n}\n\n\nreturn msg;",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 540,
-        "y": 300,
-        "wires": [
-            [
-                "817f09dd9d9a240d"
-            ],
-            []
         ]
     },
     {
@@ -2289,23 +2306,6 @@
         ]
     },
     {
-        "id": "0a81a056083a295a",
-        "type": "debug",
-        "z": "b389d227e32c6bfb",
-        "name": "debug 9",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 530,
-        "y": 520,
-        "wires": []
-    },
-    {
         "id": "5603406bd3825e58",
         "type": "link in",
         "z": "3468f95594a76fb5",
@@ -2321,55 +2321,6 @@
                 "afed3706510d29ed",
                 "1d8e33de4a958fe6"
             ]
-        ]
-    },
-    {
-        "id": "3662c13d201a10fe",
-        "type": "ui_table",
-        "z": "3468f95594a76fb5",
-        "group": "9e88d242ff60dbeb",
-        "name": "Log",
-        "order": 2,
-        "width": 10,
-        "height": 8,
-        "columns": [
-            {
-                "field": "action_name",
-                "title": "Action",
-                "width": "",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "date_action",
-                "title": "Date",
-                "width": "35%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "auteur_action",
-                "title": "Author",
-                "width": "15%",
-                "align": "left",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            }
-        ],
-        "outputs": 1,
-        "cts": true,
-        "x": 1170,
-        "y": 120,
-        "wires": [
-            []
         ]
     },
     {
@@ -2390,22 +2341,6 @@
         "wires": []
     },
     {
-        "id": "d8f627d71384ba9f",
-        "type": "postgresql",
-        "z": "3468f95594a76fb5",
-        "name": "Insert User",
-        "query": "insert into \"log\" (action_name,auteur_action,date_action)\n\nvalues ($1, $2, now())",
-        "postgreSQLConfig": "c07d094777037409",
-        "split": true,
-        "rowsPerMsg": 1,
-        "outputs": 1,
-        "x": 750,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "afed3706510d29ed",
         "type": "function",
         "z": "3468f95594a76fb5",
@@ -2421,38 +2356,6 @@
         "wires": [
             [
                 "d8f627d71384ba9f"
-            ]
-        ]
-    },
-    {
-        "id": "a69666d8810ee249",
-        "type": "ui_ui_control",
-        "z": "3468f95594a76fb5",
-        "name": "",
-        "events": "connect",
-        "x": 420,
-        "y": 120,
-        "wires": [
-            [
-                "86125a0aec959a9a"
-            ]
-        ]
-    },
-    {
-        "id": "86125a0aec959a9a",
-        "type": "postgresql",
-        "z": "3468f95594a76fb5",
-        "name": "Get log data",
-        "query": "select * from log order by date_action desc",
-        "postgreSQLConfig": "c07d094777037409",
-        "split": false,
-        "rowsPerMsg": 1,
-        "outputs": 1,
-        "x": 650,
-        "y": 120,
-        "wires": [
-            [
-                "d824082137c3e559"
             ]
         ]
     },
@@ -2531,53 +2434,6 @@
         ]
     },
     {
-        "id": "7b72eb895bd0e743",
-        "type": "ui_button",
-        "z": "3468f95594a76fb5",
-        "name": "",
-        "group": "9e88d242ff60dbeb",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Delete all logs",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "delete",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 480,
-        "y": 280,
-        "wires": [
-            [
-                "3d34fa6f7fb22969"
-            ]
-        ]
-    },
-    {
-        "id": "3d34fa6f7fb22969",
-        "type": "postgresql",
-        "z": "3468f95594a76fb5",
-        "name": "Delete logs",
-        "query": "delete from log",
-        "postgreSQLConfig": "c07d094777037409",
-        "split": true,
-        "rowsPerMsg": 1,
-        "outputs": 1,
-        "x": 750,
-        "y": 280,
-        "wires": [
-            [
-                "6e3ad336749a5d01",
-                "c322903d47b5365d"
-            ]
-        ]
-    },
-    {
         "id": "6e3ad336749a5d01",
         "type": "delay",
         "z": "3468f95594a76fb5",
@@ -2622,6 +2478,87 @@
         ]
     },
     {
+        "id": "d8f627d71384ba9f",
+        "type": "postgresql",
+        "z": "3468f95594a76fb5",
+        "name": "Insert User",
+        "query": "insert into \"log\" (action_name,auteur_action,date_action)\n\nvalues ($1, $2, now())",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 750,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86125a0aec959a9a",
+        "type": "postgresql",
+        "z": "3468f95594a76fb5",
+        "name": "Get log data",
+        "query": "select * from log order by date_action desc",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 650,
+        "y": 120,
+        "wires": [
+            [
+                "d824082137c3e559"
+            ]
+        ]
+    },
+    {
+        "id": "3d34fa6f7fb22969",
+        "type": "postgresql",
+        "z": "3468f95594a76fb5",
+        "name": "Delete logs",
+        "query": "delete from log",
+        "postgreSQLConfig": "c07d094777037409",
+        "split": true,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 750,
+        "y": 280,
+        "wires": [
+            [
+                "6e3ad336749a5d01",
+                "c322903d47b5365d"
+            ]
+        ]
+    },
+    {
+        "id": "7b72eb895bd0e743",
+        "type": "ui_button",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "group": "9e88d242ff60dbeb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Delete all logs",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "delete",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 480,
+        "y": 280,
+        "wires": [
+            [
+                "3d34fa6f7fb22969"
+            ]
+        ]
+    },
+    {
         "id": "7cf1c56a0a05cbd2",
         "type": "ui_toast",
         "z": "3468f95594a76fb5",
@@ -2641,6 +2578,69 @@
         "wires": []
     },
     {
+        "id": "a69666d8810ee249",
+        "type": "ui_ui_control",
+        "z": "3468f95594a76fb5",
+        "name": "",
+        "events": "connect",
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "86125a0aec959a9a"
+            ]
+        ]
+    },
+    {
+        "id": "3662c13d201a10fe",
+        "type": "ui_table",
+        "z": "3468f95594a76fb5",
+        "group": "9e88d242ff60dbeb",
+        "name": "Log",
+        "order": 2,
+        "width": 10,
+        "height": 8,
+        "columns": [
+            {
+                "field": "action_name",
+                "title": "Action",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "date_action",
+                "title": "Date",
+                "width": "35%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "auteur_action",
+                "title": "Author",
+                "width": "15%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 1170,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "146621db7f77c288",
         "type": "link in",
         "z": "3b0dc19f6d83de1d",
@@ -2654,6 +2654,33 @@
         ],
         "x": 185,
         "y": 100,
+        "wires": [
+            [
+                "a83600909d61c828"
+            ]
+        ]
+    },
+    {
+        "id": "fc629ab61d1b545b",
+        "type": "change",
+        "z": "3b0dc19f6d83de1d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Dashboard_Data\",\"Dashboard_Row\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 180,
         "wires": [
             [
                 "a83600909d61c828"
@@ -2683,33 +2710,6 @@
         "wires": [
             [
                 "fc629ab61d1b545b"
-            ]
-        ]
-    },
-    {
-        "id": "fc629ab61d1b545b",
-        "type": "change",
-        "z": "3b0dc19f6d83de1d",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"group\":{\"hide\":[\"Dashboard_Data\",\"Dashboard_Row\"]}}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 470,
-        "y": 180,
-        "wires": [
-            [
-                "a83600909d61c828"
             ]
         ]
     }
