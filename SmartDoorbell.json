@@ -819,8 +819,8 @@
         "confignode": "bfaadd0a56cbec3d",
         "name": "Remot device",
         "verbose": 0,
-        "x": 810,
-        "y": 1280,
+        "x": 870,
+        "y": 1220,
         "wires": [
             []
         ]
@@ -2019,6 +2019,76 @@
                 "e42398aa0311a569"
             ]
         ]
+    },
+    {
+        "id": "426c1b886e3ddee4",
+        "type": "comment",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "info": "Reception de l'état de mise à jour des \nnotifications pour la détection de\n mouvenemnt ou de sonnerie ",
+        "x": 180,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "2c88bcd79fe1c7c5",
+        "type": "comment",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "info": "Entrée des données provenant des commandes\nd'Amazon Alexa",
+        "x": 160,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "6ca45329c67d470f",
+        "type": "comment",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "info": "Topic permettant de traiter les informations \nsur le dashboard. Mise à jour des états des switchs\net par la suite traitement par une fonction\nintermédiare puis stockage dans la base de données",
+        "x": 140,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3ace486dbd06fb09",
+        "type": "comment",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "info": "Les actions sont envoyées dans un autre \nflow pour stockage dans la base de données",
+        "x": 980,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "75bea453bd0b7835",
+        "type": "comment",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "info": "Topic pour recevoir les actions faites par \nla sonnette et les afficher sur le dashboard",
+        "x": 860,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "06ade40407624fdd",
+        "type": "comment",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "info": "Bouton pour tester l'envoi de l'email à\nl'utilisateur admin de la sonnette",
+        "x": 240,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "4ab9112007deca3f",
+        "type": "comment",
+        "z": "c85c8003578c92e6",
+        "name": "",
+        "info": "Mise à jour des informations de l'user admin\ndans la base de données",
+        "x": 260,
+        "y": 620,
+        "wires": []
     },
     {
         "id": "71a97de79675cc6e",
